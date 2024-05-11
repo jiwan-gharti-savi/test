@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="19.858" viewBox="0 0 30 19.858">
+  <g id="layer1" transform="translate(1.545 2.571)">
+    <path id="rect5260" d="M0,0H28.261V16.963H0Z" transform="translate(-0.675 -1.123)" fill="#012169"/>
+    <path id="path15342" d="M2.824,0,0,1.694l1.018,1.7H30.126L32.95,1.7,31.932,0Z" transform="translate(0.2 -2.571) rotate(30.96)" fill="#fff"/>
+    <path id="path15319" d="M31.932,3.391l1.018-1.7L30.126,0H1.018L0,1.7,2.824,3.391Z" transform="translate(-1.545 14.38) rotate(-30.96)" fill="#fff"/>
+    <path id="rect10396" d="M20,0h5.63V16.963H20Z" transform="translate(-9.36 -1.123)" fill="#fff"/>
+    <path id="rect11230" d="M0,10H28.261v5.63H0Z" transform="translate(-0.675 -5.457)" fill="#fff"/>
+    <path id="rect10396-3" d="M22,0h3.378V16.963H22Z" transform="translate(-10.234 -1.123)" fill="#c8102e"/>
+    <path id="rect11230-6" d="M0,12H28.261v3.378H0Z" transform="translate(-0.675 -6.331)" fill="#c8102e"/>
+    <path id="path15792" d="M42.716,25.63V24.317L35.519,20H33.33Z" transform="translate(-15.13 -9.791)" fill="#c8102e"/>
+    <path id="path15766" d="M0,0,.676,1.126H9.068L10.944,0Z" transform="translate(-0.675 -1.123) rotate(30.96)" fill="#c8102e"/>
+    <path id="path15786" d="M30,5.63h1.878L41.261,0H39.074L30,5.444Z" transform="translate(-13.675 -1.123)" fill="#c8102e"/>
+    <path id="path15788" d="M11.262,20H9.386L0,25.628v0H2.189l9.074-5.444Z" transform="translate(-0.677 -9.791)" fill="#c8102e"/>
+  </g>
+</svg>

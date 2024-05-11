@@ -1,0 +1,63 @@
+.reload-overlay-modal{
+    all: unset;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border-radius: 0.5rem; */
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #F5CBA3;
+    max-width: 78%;
+    max-height: 80%;
+    overflow: auto;
+    width: 40%;
+    background: #FEF3E5;
+    border-radius: 0px 0px 20px 20px;
+    opacity: 1;
+    height: 166px !important;
+    padding: 15px 20px;
+    /* bottom: 301px; */
+}
+.ReactModal__Overlay{
+    background-color: rgb(10 9 9 / 14%) !important;
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+.overlay-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} 
+
+.overlay-content-container p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.overlay-content-container p img{
+    width: 20px;
+    margin-bottom: -3px;
+}
+.overlay-content-container span{
+    color: #262827;
+}
+
+.retry-button{
+    margin-top: 19px !important;
+    border-radius: 5px !important;
+}
+.cancel{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.occ-close-overloaded{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+}

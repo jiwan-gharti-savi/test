@@ -1,0 +1,37 @@
+.ia_button_left {
+  .ia_button_left_hover_image {
+    display: none;
+  }
+  &:hover {
+    .ia_button_left_hover_image {
+      display: block;
+    }
+    .ia_button_left_image {
+      display: none;
+    }
+  }
+}
+
+.ia_button_right {
+  .ia_button_right_hover_image {
+    display: none;
+  }
+  &:hover {
+    .ia_button_right_hover_image {
+      display: inline;
+    }
+    .ia_button_right_image {
+      display: none;
+    }
+  }
+}
+
+.my-button-transition {
+  transition: none;
+  &:active {
+    background-color: #1f2f79!important;  /* Use 'inherit' or 'transparent' to remove active color */
+    color: white !important; /* Use 'inherit' or a specific color if needed */
+    border-color: #374dac !important; /* Use 'inherit' or a specific color if needed */
+    box-shadow: none !important;
+  }
+}

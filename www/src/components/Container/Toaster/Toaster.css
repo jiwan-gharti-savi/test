@@ -1,0 +1,25 @@
+.toaster-container {
+    background: green;
+    width: fit-content;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    height: 39px;
+    padding: 0px 65px;
+    transition: visibility 0s, opacity 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+.toaster-on{
+    visibility: visible;
+    opacity: 1;
+}
+
+.toaster-content{
+    text-align: center;
+    margin-top: 8px;
+}
+

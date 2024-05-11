@@ -1,0 +1,164 @@
+/************* common re-use skeleton css modules **************/
+.skeleton-small-box {
+    display: inline-block;
+    height: 1em;
+    position: relative;
+    overflow: hidden;
+    background-color: #f4f4f2;
+  
+    &::after{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      transform: translateX(-100%);
+      background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(242, 242, 242, 0)), color-stop(20%, rgba(162, 162, 160, 0.1)), color-stop(60%, rgba(242, 242, 242, 0.5)), to(rgba(255, 255, 255, 0)));
+      background-image: -webkit-linear-gradient(left, rgba(242, 242, 242, 0.1) 0, rgba(162, 162, 160, 0.1) 20%, rgba(242, 242, 242, 0.5) 60%, rgba(255, 255, 255, 0));
+      background-image: -o-linear-gradient(left, rgba(242, 242, 242, 0.1) 0, rgba(162, 162, 160, 0.1) 20%, rgba(242, 242, 242, 0.5) 60%, rgba(255, 255, 255, 0));
+      background-image: linear-gradient(90deg, rgba(242, 242, 240, 0.1) 0, rgba(162, 162, 160, 0.1) 20%, rgba(242, 242, 240, 0.5) 60%, rgba(255, 255, 255, 0));
+      -webkit-animation: shimmer 3s infinite;
+      animation: shimmer 3s infinite;
+      content: '';
+    }
+  
+    @keyframes shimmer {
+      100% {
+        transform: translateX(100%);
+      }
+    }
+  }
+  
+  .skeleton-medium-box{
+    display: inline-block;
+    height: 1em;
+    position: relative;
+    overflow: hidden;
+    background-color: #f4f4f2;
+  
+    &::after{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      transform: translateX(-100%);
+      background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(242, 242, 242, 0)), color-stop(20%, rgba(162, 162, 160, 0.1)), color-stop(60%, rgba(242, 242, 242, 0.5)), to(rgba(255, 255, 255, 0)));
+      background-image: -webkit-linear-gradient(left, rgba(242, 242, 242, 0.1) 0, rgba(162, 162, 160, 0.1) 20%, rgba(242, 242, 242, 0.5) 60%, rgba(255, 255, 255, 0));
+      background-image: -o-linear-gradient(left, rgba(242, 242, 242, 0.1) 0, rgba(162, 162, 160, 0.1) 20%, rgba(242, 242, 242, 0.5) 60%, rgba(255, 255, 255, 0));
+      background-image: linear-gradient(90deg, rgba(242, 242, 240, 0.1) 0, rgba(162, 162, 160, 0.1) 20%, rgba(242, 242, 240, 0.5) 60%, rgba(255, 255, 255, 0));
+      -webkit-animation: shimmer 3s infinite;
+      animation: shimmer 3s infinite;
+      content: '';
+    }
+  
+    @keyframes shimmer {
+      100% {
+        transform: translateX(100%);
+      }
+    }
+  }
+  
+  .skeleton-progress-bar-sm{
+      .progess-value{
+        height: 12px;
+        background: #f4f4f2;
+        width: 100%;
+        margin-bottom: 9px;
+      }
+  }
+  .skeleton-progress-bar-md{
+      .progess-value{
+        height: 15px;
+        background: #f4f4f2;
+        width: 100%;
+        margin-bottom: 9px;
+      }
+      .progess-value-xsm12{
+        width: 25%;
+      }
+      .progess-value-xsm1{
+        width: 35%;
+      }
+      .progess-value-xxs{
+        width: 40%;
+      }
+      .progess-value-xs1{
+        width: 47%;
+      }
+      .progess-value-xs{
+        width: 50%;
+      }
+      .progess-value-xs2{
+        width: 55%;
+      }
+      .progess-value-sm{
+        width: 60%;
+      }
+      .progess-value-sm2{
+        width: 65%;
+      }
+      .progess-value-md{
+        width: 70%;
+      }
+      .progess-value-md2{
+        width: 75%;
+      }
+      .progess-value-lg{
+        width: 80%;
+      }
+      .progess-value-xlg{
+        width: 90%;
+      }
+      .progess-value-xlg2{
+        width: 95%;
+      }
+      .progess-value-xxlg{
+        width: 100%;
+      }
+  }
+  .skeleton-progress-bar-lg{
+      width: 100%;
+      .progess-value{
+        height: 30px;
+        background: #F2F2F0;
+        margin-bottom: 18px;
+        margin-left: 40px;
+      }
+      .progess-value-xxs{
+        width: 40%;
+      }
+      .progess-value-xs{
+        width: 50%;
+      }
+      .progess-value-sm{
+        width: 60%;
+      }
+      .progess-value-md{
+        width: 70%;
+      }
+      .progess-value-lg{
+        width: 80%;
+      }
+      .progess-value-xlg{
+        width: 90%;
+      }
+      .progess-value-xxlg{
+        width: 100%;
+      }
+      
+  }
+  .skeleton-progress-bar-xlg{
+      .progess-value{
+        height: 40px;
+        background: #f4f4f2;
+        width: 100%;
+        margin-bottom: 9px;
+      }
+  }
+  
+  /*************** common re-usable css modules  ****************/

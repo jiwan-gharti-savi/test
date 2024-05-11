@@ -1,0 +1,95 @@
+.stytchlogin-con {
+  width: 40%;
+  margin: auto;
+  margin-top: 25vh;
+  text-align: center;
+  align-items: center;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stytchlogin-cont {
+  min-height: calc(100vh - 51px);
+}
+
+.stytch-row-container {
+  gap: 12vw;
+}
+
+.stytch-login-container {
+  min-height: 500px;
+  border-radius: 5px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-width: 500px;
+
+  .jyTevX {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.stytch-white-background {
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.stytch-login-buttons {
+  background-color: rgb(7, 59, 178);
+  color: white;
+  padding: 8.5px;
+  font-size: 17px;
+}
+
+.stytch-login-buttons:hover {
+  // background-color : rgb(7, 59, 178);
+  // color: white;
+  border-color: rgb(7, 59, 178) !important;
+  color: rgb(7, 59, 178) !important;
+}
+
+.stytch-passcode-cont {
+  width: 500px !important;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .stytch-card-container {
+    width: 500px;
+    .card {
+      border: none;
+      padding: 20px;
+    }
+  }
+}
+
+.forgot-password {
+  display: flex;
+  gap: 0px;
+  flex-direction: column;
+  .forget-password-button {
+    color: blue;
+  }
+  p{
+    color:red
+  }
+}
+
+
+.stytch-loading-gif {
+  position: absolute;
+  top: 10%;
+  width: 20px;
+  z-index: 1;
+}
+
+.thank-you-text {
+  display: block;
+}

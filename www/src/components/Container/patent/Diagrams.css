@@ -1,0 +1,66 @@
+.diagrams-mermaid-container {
+  /* display: flex; */
+  justify-content: center;
+}
+
+.diagrams-list-abstract {
+  margin-top: -50px !important;
+  margin-bottom: 40px !important;
+}
+
+.tenplate-image-container {
+  & img {
+    width: 100%;
+  }
+}
+
+.diagrams-figures-heading-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.disable-template-button {
+  color: #ffffff;
+  background: #959595;
+  margin-left: 15px;
+  border: 1px solid #959595;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  border: 1px solid #707070;
+  position: relative;
+  top: 2px;
+  padding: 5px 12px;
+}
+
+.continue-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.continue-button img {
+  width: 20px;
+}
+.continue-blue-arrow {
+  display: none;
+}
+
+.continue-button:hover .continue-white-arrow {
+  display: none;
+}
+.continue-button:hover .continue-blue-arrow {
+  display: block;
+}
+
+.detailed-description-generating-animation {
+  padding: 11px;
+  margin-bottom: 20px;
+  margin-top: -50px;
+}
+
+.extra-detailed-description-abstract{
+  padding: 11px;
+  margin-bottom: 20px;
+  margin-top: -15px;
+}

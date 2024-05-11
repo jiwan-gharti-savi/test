@@ -1,0 +1,77 @@
+.authCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 51px);
+    background-color: #eff5ff;
+}
+.content{
+    width: 70vw;
+    /* background-color: #F3F8FF; */
+    background: #fff 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    opacity: 1;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    border-radius: 10px;
+}
+
+.content span{
+    color: #1c1c1b;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.buttons button{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #3D5CD7;
+    gap: 1px;
+}
+.buttons button:nth-child(1):hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+   
+}
+
+.buttons button:nth-child(1) {
+    background-color: #073BB2;
+    color: white;
+}
+.buttons button:nth-child(2):hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.buttons button:nth-child(2) {
+    background-color: #366AE1;
+    color: white;
+    display: none;
+}
+
+.content span{
+   
+    font-size: 31px;
+    font-family: arial;
+    color: #222124;
+    text-align: center;
+}
+.content span:nth-child(1)
+{
+    margin-bottom: 1px;
+}
+
+.content span:nth-child(2)
+{
+    margin-bottom: 24px;
+}

@@ -1,0 +1,165 @@
+/* Dropdown container styles */
+.custom-dropdown-container {
+    position: relative;
+    /* margin: 20px; */
+  }
+  
+  /* Dropdown header styles */
+  .custom-dropdown-header-0 {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #073BB2;
+    /* border: 1px solid #073BB2; */
+    /* border: none !important; */
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    /* display: inline-block; */
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    line-height: 1.2rem;
+    margin: 5px;
+    padding: 15px 50px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s ease;
+    width: max-content;
+    border: 1px solid #083BB2;
+    min-width: 214px;
+  }
+  
+  /* Arrow icon styles */
+  .arrow {
+    margin-left: 8px !important;
+    transition: transform 0.3s ease !important;
+  }
+  
+  .arrow.open {
+    transform: rotate(180deg) !important;
+  }
+  
+  /* Dropdown options styles */
+  .custom-dropdown-options {
+    position: absolute;
+    top: 100%;
+    /* left: 6px; */
+    width: 100%;
+    /* border: 1px solid #083BB2; */
+    /* border-top: none; */
+    border-radius: 0 0 4px 4px;
+    background-color: #fff;
+    /* z-index: 10; */
+    /* margin: 0px 7px; */
+    /* margin: 5px; */
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    text-align: left;
+  }
+  
+  .custom-option {
+    padding: 8px;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+    /* color: #073BB2; */
+    font-size: 0.8rem;
+    font-weight: 100;
+  
+    &:hover {
+      background-color: #f0f0f0;
+      background-color: #073BB2 ;
+      color: white;
+    }
+  }
+  
+  .dropdown-white-arrow-images{
+    display: none;
+  }
+
+  .custom-option:hover .dropdown-white-arrow-images{
+    display: inline;
+    height: 14px;
+    margin-left: 2px;
+  }
+
+  .dropdown-blue-arrow-images{
+    height: 14px;
+    margin-left: 2px;
+  }
+
+  .custom-option:hover .dropdown-blue-arrow-images{
+    display: none;
+  }
+
+  .custom-dropdown-header{
+    color: #515151;
+    padding: 8px;
+    font-size: 16px;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #073BB2; */
+    /* border: 1px solid #073BB2; */
+    /* border: none !important; */
+    border-radius: 1px;
+    /* color: #fff; */
+    cursor: pointer;
+    /* display: inline-block; */
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    /* line-height: 1.2rem; */
+    /* margin: 5px; */
+    padding: 12.9px 15px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s ease;
+    /* width: max-content; */
+    /* border: 1px solid #083BB2; */
+    /* min-width: 214px; */
+    background-color: white;
+    font-size: 0.85rem;
+    width: 100%;
+    font-weight: 500;
+    margin-top: 5px;
+    /* box-shadow: 0 1px 1px 1px rgba(0,0,0,0.08); */
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+    .drop-down-more-button{
+      padding: 2px 4px !important;
+      font-size: 0.9rem !important;
+      border-radius: 5px !important;
+      margin: 8px 8px 8px 8px !important;
+      width: fit-content;
+    }
+  
+    /* .react-datepicker__navigation-icon--next::before {
+      transform: rotate(45deg);
+      left: 90px !important;
+      top: 2px !important;
+    }
+    .react-datepicker__navigation-icon--previous::before {
+      transform: rotate(225deg);
+      right: 94px !important;
+      top: 1px !important;
+    } */

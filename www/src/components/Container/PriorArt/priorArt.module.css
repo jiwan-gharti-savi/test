@@ -1,0 +1,357 @@
+/* .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 20px 0px 20px;
+    align-items: center;
+  }
+  
+  .box {
+    position: relative;
+    width: calc(100% - 10px);
+    height: fit-content;
+    margin-bottom: 10px;
+    background-color: #EFF4FD;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box:hover{
+    background-color: #e1ebfe;
+  }
+
+ 
+  .checkbox:hover{
+    cursor: pointer;
+  }
+
+  .checkboxCont{
+    display: flex;
+    align-items: baseline;
+}
+  .contentCont{
+    margin: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .rankCont{
+    gap: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+  }
+
+  .rightSide {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    
+    min-height: 100vh;
+  }
+
+  .left {
+    background-color: #f9fbfc;
+    flex: 1 1;
+    padding: 0px 1rem;
+   
+  }
+
+  .right {
+   padding: 0px 39px;
+   
+  } */
+
+  .right {
+    padding: 0px 39px;
+    margin-top: 40px;
+    
+   } 
+
+  .contentCont{
+    padding: 0px 4px 15px 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .checkboxCont{
+    display: flex;
+  }
+
+  .checkboxCont > div:first-child {
+    padding: 6px;
+    background-color: #F4F4F4;
+    font-size: 20px;
+    color: #2B274E;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 25px; */
+    padding: 37px 0px;
+  }
+
+  .column {
+    /* flex-basis: 635px; */
+    padding: 0px 10px;
+    text-align: center;
+    /* background-color: pink; */
+    box-shadow: 0px 3px 6px #00000029;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    width: 100%;
+  }
+
+  .titleCont{
+    display: flex;
+    gap: 6px;
+  }
+
+  .titleCont span:nth-child(1){
+    font-size: 20px;
+  }
+
+  .titleCont span:nth-child(2){
+    text-align: start;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #2B274E;
+    opacity: 1;
+    font-weight: bold;
+  }
+  .explainCont{
+    text-align: left;
+  }
+
+  .progressCont{
+    /* width:200px */
+  }
+
+  .footerCont{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    /* margin-top: 20px; */
+    padding-top: 16px;
+    border-top: 1px solid #CED4EE;
+  }
+
+.rightDetailCont{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+}
+.assigineeCont{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.assigineeCont span:nth-child(2)
+{
+  color: #121212;
+  font-weight: bold;
+}
+
+.scoreCont{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: fit-content;
+  padding: 5px;
+  background: #D5E3FC;
+  border-radius: 5px;
+}
+
+.scoreCont span:nth-child(1)
+{
+  color: #121212;
+}
+
+.scoreCont span:nth-child(2)
+{
+  color: #121212;
+  font-weight: bold;
+}
+.explainCont{
+  font-size: 18px;
+  color: #484747;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* height: 92px; */
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.topCont{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 20px;
+}
+
+.detailCont{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.barContent{
+  font-size: 12px;
+  margin-top: -12px;
+  display: flex;
+  flex-direction: column;
+  color: #7CB343;
+}
+
+.barContent strong{
+  font-size: 15px;
+}
+
+
+
+  .editInvention {
+    padding-right: 45px;
+    display: flex;
+    width: 50px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -8px;
+    display: none;
+  }
+
+  .buttonCont{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 39px;
+    margin-top: 22px;
+    border-bottom: 1px solid #C8D7F4;
+    margin-left: 38px;
+    padding-bottom: 4px;
+  }
+
+ .genImage{   
+   width: 18px;
+  margin-left: 7px;
+ }
+
+ .invenctionSummary{
+  padding: 0px 30px 0px 28px;
+  margin: 10px;
+ }
+
+ .exportPriorArt{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  position: relative;
+ }
+
+ .exportCont {
+  margin: 0px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  background: #fafcff;
+  color: #083BB2;
+  border: 1px solid #083BB2;
+  font-size: 16px;
+  position: relative;
+}
+.exportCont img {
+  width: 21px;
+  height: 14px;
+  margin-left: -3px;
+  margin-right: 5px;
+}
+.exportCont:hover {
+  margin: 0px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  background: #fafcff;
+  color: #083BB2;
+  border: 1px solid #083BB2;
+  font-size: 16px;
+}
+.exportTypeCont{
+  position: absolute;
+  background: white;
+  color: #073BB2;
+  top: 116%;
+  display: flex;
+  flex-direction: column;
+  width: 123%;
+  text-align: left;
+  padding: 5px 11px !important;
+  margin-left: 5px;
+  z-index: 10;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  right: -11%;
+}
+
+.downloadButtonRightIcon{
+  height: 8px !important;
+  margin-left: 4px !important;
+  margin-right: 0px !important;
+  margin-bottom: 1px;
+}
+
+.exportTypeFormat{
+  padding: 0px 5px !important;
+}
+
+
+.exportTypeFormat:hover{
+  background-color: #083BB2;
+  color: white;
+  cursor: pointer;
+}
+
+.downloadTypeBlueIcon{
+  display: inline;
+  width: 13px;
+  margin-right: 8px;
+}
+
+.exportTypeFormat:hover .downloadTypeBlueIcon{
+  display: none;
+}
+
+.downloadTypeWhiteIcon{
+  display: none;
+  width: 13px;
+  margin-right: 8px;
+}
+.exportTypeFormat:hover .downloadTypeWhiteIcon{
+  display: inline;
+}
+
+
+.noPriorArtCont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin: 25px 0px;
+}
+
+.noPriorArtCont img{
+  width: 50%;
+}

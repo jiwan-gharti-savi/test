@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="PY-233.13135.95">
+    <data-source name="ipauthor_dev@localhost" uuid="6c262b9f-fb95-462c-b14d-ff39643bf70d">
+      <database-info product="PostgreSQL" version="16.2" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="16.2" exact-driver-version="42.6">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node negative="1">
+            <node kind="database" qname="@">
+              <node kind="schema" qname="@" />
+            </node>
+            <node kind="database" qname="ipauthor_dev">
+              <node kind="schema">
+                <name qname="project" />
+                <name qname="prompt" />
+                <name qname="public" />
+                <name qname="tasks" />
+              </node>
+            </node>
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="docker@5433" uuid="7c7f4152-2ae8-4eed-afc1-6ca226f511bc">
+      <database-info product="PostgreSQL" version="14.10 (Debian 14.10-1.pgdg120+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="14.10" exact-driver-version="42.6">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node negative="1">
+            <node kind="database" qname="@">
+              <node kind="schema" qname="@" />
+            </node>
+            <node kind="database" qname="ipauthor_dev">
+              <node kind="schema" qname="prompt" />
+            </node>
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+  </component>
+</project>

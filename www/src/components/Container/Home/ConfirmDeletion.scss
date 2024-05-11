@@ -1,0 +1,47 @@
+.delete-project-heading{
+    margin: 10px 0px 10px 0px !important;
+    position: relative;
+    border-bottom: 1px solid #8080803b;
+    .cancel-button-delete-overlay{
+        position: absolute;
+        /* right: 3px; */
+        left: 95%;
+        top: 0px;
+        width: 0% !important;
+        cursor: pointer;
+    }
+
+    p{
+        font-weight: bolder;
+        padding:  0px 0px 8px 18px !important;
+
+    }
+}
+.confirm-deletion-outer-row{
+
+    position: relative;
+
+    .confirm-deletion-text-box{
+        width: 75%;
+        margin: auto;
+        box-shadow: 0 0 0 .25rem rgb(239, 90, 45);
+    }
+    .confirm-deletion-text-box:focus{
+        box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25) !important;
+    }
+
+    padding: 0px 0px 20px 0px !important;
+    span{
+        font-weight: bold;
+    }
+    .delete-yes-button{
+        background-color: rgb(239, 90, 45);
+        border: none;
+        // width: 50px;
+    }
+    .delete-no-button{
+        background-color: #073bb2;
+        border: none;
+        // width: 50px;
+    }
+}

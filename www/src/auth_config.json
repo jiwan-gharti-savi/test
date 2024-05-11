@@ -1,0 +1,21 @@
+{
+
+  "development": {
+    "domain": "dev-zeyx5msqs4uqotnl.us.auth0.com",
+    "clientId": "YAJbiunEqF8JgaSxKGuhSrc1gJo57AG7",
+    "audience": "https://dev-zeyx5msqs4uqotnl.us.auth0.com/api/v2/",
+    "appOrigin": "http://127.0.0.1:3000",
+    "apiOrigin": "http://127.0.0.1:3000"
+  },
+  "production": {
+    "domain": "dev-zeyx5msqs4uqotnl.us.auth0.com",
+    "clientId": "YAJbiunEqF8JgaSxKGuhSrc1gJo57AG7",
+    "audience": "https://dev-zeyx5msqs4uqotnl.us.auth0.com/api/v2/",
+    "appOrigin": "http://127.0.0.1:3000",
+    "apiOrigin": "http://127.0.0.1:3000"
+  },
+  "stytch": {
+    "publicToken": "public-token-test-fa335769-d09b-47cc-8a99-77b259dfce8c"
+  }
+
+}

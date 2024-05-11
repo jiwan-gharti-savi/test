@@ -1,0 +1,129 @@
+.expired-notice {
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #ebebeb;
+    border-radius: 0.25rem;
+    margin: 0.5rem;
+  }
+  
+  .expired-notice > span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: red;
+  }
+  
+  .expired-notice > p {
+    font-size: 1.5rem;
+  }
+
+  .counter-container{
+    /* display: flex; */
+    justify-content: center;
+    background: #f2f7ff;
+    background: white;
+    /* height: 500px; */
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .counter-abstracts-container{
+    margin-top: 13px;
+  }
+  
+  .show-counter {
+    padding: 1.5rem;
+    max-width: 300px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 16px 0px rgba(80, 80, 90, 0.2);
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .show-counter .countdown-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding: 1rem;
+    border: 1px solid #ebebeb;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .show-counter .countdown {
+    line-height: 1.25rem;
+    padding: 0 0.75rem 0 0.75rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #073BB2;
+    font-weight: 100;
+    font-size: 2rem;
+  }
+  
+  .show-counter .countdown.danger {
+    color: #ff0000;
+  }
+  
+  .show-counter .countdown > p {
+    margin: 0;
+    margin-bottom: 0.6rem;
+    margin-top: 0.3rem;
+  }
+  
+  .show-counter .countdown > span {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .counter-abstracts-container .details-skeleton-section{
+    margin-top: -20px;
+  }
+  .counter-abstracts-container .detail-left-section{
+    display: none;
+  }
+
+  .counter-tag-line{
+       /* position: absolute; */
+       top: 112%;
+       left: 50%;
+       /* transform: translate(-50%,-50%); */
+       /* width: fit-content; */
+       background: white;
+       /* padding: 0px 5px;*/
+       /* display: none; */
+  }
+
+  .counter-tag-line p{
+       /* font-weight: 600; */
+       background: transparent;
+       /* width: max-content; */
+       margin: 0px;
+       text-align: center;
+       max-width: 300px;
+       margin-top: 7px;
+  }
+
+  .counter-tag-line--top{
+    top: 130%;
+  }
+
+  .mins{
+    display: none !important;
+  }
+
+  @-moz-document url-prefix() {
+  .counter-abstracts-container{
+    margin: 40px 0px;
+  }
+}

@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="43dd9519-8333-4c9b-92e7-9a566749aeb9" name="Changes" comment="raise exception if data is not inserted properly to the cache table.">
+      <change beforePath="$PROJECT_DIR$/services/migrations/db/20230714_improve_claim.sql" beforeDir="false" afterPath="$PROJECT_DIR$/services/migrations/db/20230714_improve_claim.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/migrations/db/20230822_activity_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/services/migrations/db/20230822_activity_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/migrations/db/20231115_streaming_prompt.sql" beforeDir="false" afterPath="$PROJECT_DIR$/services/migrations/db/20231115_streaming_prompt.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/migrations/db/20240104_seperate_detail_description.sql" beforeDir="false" afterPath="$PROJECT_DIR$/services/migrations/db/20240104_seperate_detail_description.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/migrations/db/20240221_split_claims_and_1106.sql" beforeDir="false" afterPath="$PROJECT_DIR$/services/migrations/db/20240221_split_claims_and_1106.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/migrations/db/20240228_fix_detailed_description.sql" beforeDir="false" afterPath="$PROJECT_DIR$/services/migrations/db/20240228_fix_detailed_description.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/migrations/db/20240312_modify_latest_prompt.sql" beforeDir="false" afterPath="$PROJECT_DIR$/services/migrations/db/20240312_modify_latest_prompt.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/migrations/db/20240403_added_total_description.sql" beforeDir="false" afterPath="$PROJECT_DIR$/services/migrations/db/20240403_added_total_description.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/migrations/db/20240412_inputs_as_markdown.sql" beforeDir="false" afterPath="$PROJECT_DIR$/services/migrations/db/20240412_inputs_as_markdown.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/migrations/db/20240430_add_roles.sql" beforeDir="false" afterPath="$PROJECT_DIR$/services/migrations/db/20240430_add_roles.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/report.sh" beforeDir="false" afterPath="$PROJECT_DIR$/services/report.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/services/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/tests/automated-tests.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/tests/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/tests/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/tests/test_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/tests/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/yytest_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/test_app.py" afterDir="false" />
+    </list>
+    <list id="990247b3-675b-41cf-add5-e6339014a087" name="don't commit" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/develop" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/DIPA-237-Exp-Offline-Flow-Using-DAG" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="462b2b65-86f2-4c8c-bffb-ed410494a046" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MigrationScriptOptions">
+    <option name="ignoreImplicitObjects" value="true" />
+    <option name="ignoreSourceCode" value="false" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2cFkmRDdvyJqGllduoLNsJ5bf9h" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Docker.services.celery-beat: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.services.db: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.services.web: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.services.worker: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/DIPA-254-Dockerize-IPAuthor-backend-flow-and-Automate-testing-bef…ithub&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jiwangharti/OFFICE_PROJECTS/drafting-ai/services/celery_app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;database.data.views.appearance&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/celery_app" />
+      <recent name="$PROJECT_DIR$/migrations/db" />
+      <recent name="$PROJECT_DIR$/services" />
+      <recent name="$PROJECT_DIR$/services/migrations/db" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/services/tests" />
+      <recent name="$PROJECT_DIR$/services/document_indexing" />
+      <recent name="$PROJECT_DIR$/services/.temp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.services.db: Compose Deployment">
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="services.celery-beat: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="celery-beat" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="services/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="services.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="services/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="services.web: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="web" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="services/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="services.worker: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="worker" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="services/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.services.db: Compose Deployment" />
+        <item itemvalue="Docker.services.web: Compose Deployment" />
+        <item itemvalue="Docker.services.worker: Compose Deployment" />
+        <item itemvalue="Docker.services.celery-beat: Compose Deployment" />
+        <item itemvalue="Docker.services.celery-beat: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="43dd9519-8333-4c9b-92e7-9a566749aeb9" name="Changes" comment="" />
+      <changelist id="990247b3-675b-41cf-add5-e6339014a087" name="don't commit" comment="" />
+      <created>1707714873391</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707714873391</updated>
+      <workItem from="1707714874518" duration="4118000" />
+      <workItem from="1707720205524" duration="76803000" />
+      <workItem from="1708082361586" duration="629000" />
+      <workItem from="1708404149695" duration="38000" />
+      <workItem from="1710908913044" duration="1186000" />
+      <workItem from="1710911736204" duration="65835000" />
+      <workItem from="1711610874255" duration="7213000" />
+      <workItem from="1711967630510" duration="78619000" />
+      <workItem from="1712141894202" duration="54881000" />
+      <workItem from="1712293866879" duration="2770000" />
+      <workItem from="1712297614388" duration="8851000" />
+      <workItem from="1712368870247" duration="5036000" />
+      <workItem from="1712541034986" duration="10550000" />
+      <workItem from="1712636954027" duration="3846000" />
+      <workItem from="1712651230213" duration="118000" />
+      <workItem from="1712651355074" duration="68000" />
+      <workItem from="1712651426744" duration="96000" />
+      <workItem from="1712651527170" duration="38733000" />
+      <workItem from="1712748748118" duration="12085000" />
+      <workItem from="1712842873205" duration="11865000" />
+      <workItem from="1713152111386" duration="86559000" />
+      <workItem from="1713449326628" duration="139726000" />
+      <workItem from="1714103007218" duration="19152000" />
+      <workItem from="1714366570203" duration="125251000" />
+      <workItem from="1714874576556" duration="143216000" />
+      <workItem from="1715336497820" duration="11388000" />
+      <workItem from="1715365950746" duration="1438000" />
+    </task>
+    <task id="LOCAL-00021" summary="- wip">
+      <option name="closed" value="true" />
+      <created>1713191820605</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1713191820605</updated>
+    </task>
+    <task id="LOCAL-00022" summary="- wip">
+      <option name="closed" value="true" />
+      <created>1713330136814</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1713330136814</updated>
+    </task>
+    <task id="LOCAL-00023" summary="- wip">
+      <option name="closed" value="true" />
+      <created>1713346199173</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1713346199173</updated>
+    </task>
+    <task id="LOCAL-00024" summary="- wip">
+      <option name="closed" value="true" />
+      <created>1713433687147</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1713433687147</updated>
+    </task>
+    <task id="LOCAL-00025" summary="- added new column (repeat_config) to indicate from where data should be taken during query time.&#10;- add new node logic &amp; dynamically adjust graph based on dynamic nodes.">
+      <option name="closed" value="true" />
+      <created>1713440690179</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1713440690179</updated>
+    </task>
+    <task id="LOCAL-00026" summary="- migration file">
+      <option name="closed" value="true" />
+      <created>1713440732028</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1713440732028</updated>
+    </task>
+    <task id="LOCAL-00027" summary="- changes celery config file&#10;- make a single DAG object throughout the task cycle.&#10;- change json to pickle for serializer and deserialization due to complex data type change.">
+      <option name="closed" value="true" />
+      <created>1713497846580</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1713497846580</updated>
+    </task>
+    <task id="LOCAL-00028" summary="- make it using chord(group(*tasks)) based logic has been done">
+      <option name="closed" value="true" />
+      <created>1713502046422</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1713502046422</updated>
+    </task>
+    <task id="LOCAL-00029" summary="- selecting prompts issue fixed.">
+      <option name="closed" value="true" />
+      <created>1713514856367</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1713514856367</updated>
+    </task>
+    <task id="LOCAL-00030" summary="- dynamic generation of nodes by intermediate node feature is made dynamic with certain constraints.">
+      <option name="closed" value="true" />
+      <created>1713779343488</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1713779343488</updated>
+    </task>
+    <task id="LOCAL-00031" summary="- dynamic generation of nodes by intermediate node feature is made dynamic with certain constraints.">
+      <option name="closed" value="true" />
+      <created>1713779361042</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1713779361042</updated>
+    </task>
+    <task id="LOCAL-00032" summary="- Offline Stable Version Tested on Local &#10;- all bugs for dynamic generated nodes are resolved.&#10;- query based on  section_history_id for generated nodes has been changed.&#10;- stable end to end flow testing with already generated project.&#10;- refactor code and added documentation.">
+      <option name="closed" value="true" />
+      <created>1713848967367</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1713848967367</updated>
+    </task>
+    <task id="LOCAL-00033" summary="- removed all redis based dependencies to track the task status.&#10;- make it single file for all offline flow task related migration files.">
+      <option name="closed" value="true" />
+      <created>1713865344512</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1713865344512</updated>
+    </task>
+    <task id="LOCAL-00034" summary="- removed all redis based dependencies to track the task status.&#10;- make it single file for all offline flow task related migration files.">
+      <option name="closed" value="true" />
+      <created>1713865350565</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1713865350565</updated>
+    </task>
+    <task id="LOCAL-00035" summary="- removed all unnecessary files.">
+      <option name="closed" value="true" />
+      <created>1713865453050</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1713865453050</updated>
+    </task>
+    <task id="LOCAL-00036" summary="- merge with file storage to different cloud provider.">
+      <option name="closed" value="true" />
+      <created>1713865746787</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1713865746787</updated>
+    </task>
+    <task id="LOCAL-00037" summary="- added file full path">
+      <option name="closed" value="true" />
+      <created>1713869300521</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1713869300521</updated>
+    </task>
+    <task id="LOCAL-00038" summary="- marshmallow validation and other&#10;- extra parameter is was removed">
+      <option name="closed" value="true" />
+      <created>1713869685908</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1713869685908</updated>
+    </task>
+    <task id="LOCAL-00039" summary="- combine all offline-flow migration file into two files">
+      <option name="closed" value="true" />
+      <created>1713871371760</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1713871371760</updated>
+    </task>
+    <task id="LOCAL-00040" summary="- refactor and in tasks redis related code removed.">
+      <option name="closed" value="true" />
+      <created>1713872706496</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1713872706496</updated>
+    </task>
+    <task id="LOCAL-00041" summary="- task_id is added using uuid for subtask signature, by default it is not auto created.">
+      <option name="closed" value="true" />
+      <created>1713936160324</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1713936160324</updated>
+    </task>
+    <task id="LOCAL-00042" summary="- CELERY_TRACK_STARTED config is added.&#10;- for final_task, ignore_result is added&#10;- error and success case for task is added.&#10;- remove unnecessary imports and commented code.">
+      <option name="closed" value="true" />
+      <created>1713946029716</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1713946029716</updated>
+    </task>
+    <task id="LOCAL-00043" summary="- missing optional parameter is added.&#10;- get_file_full_path_using_object&#10;also added to base class">
+      <option name="closed" value="true" />
+      <created>1713953283277</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1713953283277</updated>
+    </task>
+    <task id="LOCAL-00044" summary="- typo">
+      <option name="closed" value="true" />
+      <created>1713953694775</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1713953694775</updated>
+    </task>
+    <task id="LOCAL-00045" summary="- get_file_full_path validation added.">
+      <option name="closed" value="true" />
+      <created>1713955263382</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1713955263382</updated>
+    </task>
+    <task id="LOCAL-00046" summary="- first apis sequence is added to decide the mapping.">
+      <option name="closed" value="true" />
+      <created>1714016493102</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1714016493103</updated>
+    </task>
+    <task id="LOCAL-00047" summary="- uploaded to s3 working">
+      <option name="closed" value="true" />
+      <created>1714027069946</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1714027069946</updated>
+    </task>
+    <task id="LOCAL-00048" summary="- make it public file feature added&#10;- get_pre_signed_url issue resolved.">
+      <option name="closed" value="true" />
+      <created>1714033551107</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1714033551107</updated>
+    </task>
+    <task id="LOCAL-00049" summary="- make it public file feature added&#10;- get_pre_signed_url issue resolved.">
+      <option name="closed" value="true" />
+      <created>1714034067771</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1714034067771</updated>
+    </task>
+    <task id="LOCAL-00050" summary="- resolved.">
+      <option name="closed" value="true" />
+      <created>1714112303180</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1714112303181</updated>
+    </task>
+    <task id="LOCAL-00051" summary="- resolved.">
+      <option name="closed" value="true" />
+      <created>1714112611815</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1714112611816</updated>
+    </task>
+    <task id="LOCAL-00052" summary=": working offline flow&#10;- sub-task-based flow has been configured&#10;- real time update for is_stream api is broadcast to redis key&#10;- stream api /project/task/&lt;redis_stream_key&gt;/stream has been created&#10;- real time update api /project/&lt;project_id&gt;/real-time-update has been created,&#10;- task api /project/task/&lt;api_name&gt; has been created,&#10;- api_name column is added to prompt table&#10;- refactored code&#10;- stream channel are present is_pubsub_channel redis method is added.&#10;- Class based api has been developed to make logic unified in one place&#10;- celery configuration: QUEUED when task is triggered instead of PENDING due to complication on task distinguish.">
+      <option name="closed" value="true" />
+      <created>1714402256962</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1714402256963</updated>
+    </task>
+    <task id="LOCAL-00053" summary="remove update_redis_after_completion function which is not used.">
+      <option name="closed" value="true" />
+      <created>1714451571253</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1714451571253</updated>
+    </task>
+    <task id="LOCAL-00054" summary="remove project_api_task_tracker table from sql file">
+      <option name="closed" value="true" />
+      <created>1714479498961</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1714479498961</updated>
+    </task>
+    <task id="LOCAL-00055" summary="- remove api_task_compeleted_inceptor function.">
+      <option name="closed" value="true" />
+      <created>1714618192784</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1714618192784</updated>
+    </task>
+    <task id="LOCAL-00056" summary="WIP">
+      <option name="closed" value="true" />
+      <created>1714715462557</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1714715462557</updated>
+    </task>
+    <task id="LOCAL-00057" summary="WIP">
+      <option name="closed" value="true" />
+      <created>1714728331353</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1714728331353</updated>
+    </task>
+    <task id="LOCAL-00058" summary="valid response is added.">
+      <option name="closed" value="true" />
+      <created>1714730753301</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1714730753301</updated>
+    </task>
+    <task id="LOCAL-00059" summary="&#10;- section_type column is added to track sub-apis&#10;- &quot;IN&quot; operator supported SQL select query formation modification has been done&#10;- Updated all related query to suppport section types.">
+      <option name="closed" value="true" />
+      <created>1715052856297</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1715052856297</updated>
+    </task>
+    <task id="LOCAL-00060" summary="&#10;- solr document indexing module has been done&#10;- related configuration in config and requirements.txt are added">
+      <option name="closed" value="true" />
+      <created>1715139169776</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1715139169776</updated>
+    </task>
+    <task id="LOCAL-00061" summary="&#10;- added indexing in post and delete method while creating a project.">
+      <option name="closed" value="true" />
+      <created>1715160183181</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1715160183181</updated>
+    </task>
+    <task id="LOCAL-00062" summary="&#10;- uncomment code">
+      <option name="closed" value="true" />
+      <created>1715160494337</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1715160494337</updated>
+    </task>
+    <task id="LOCAL-00063" summary="&#10;- remove print code">
+      <option name="closed" value="true" />
+      <created>1715162261843</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1715162261843</updated>
+    </task>
+    <task id="LOCAL-00064" summary="&#10;- remove print code">
+      <option name="closed" value="true" />
+      <created>1715163050964</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1715163050964</updated>
+    </task>
+    <task id="LOCAL-00065" summary="&#10;- made an api that indexed all projects everytime to solr services">
+      <option name="closed" value="true" />
+      <created>1715167496357</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1715167496358</updated>
+    </task>
+    <task id="LOCAL-00066" summary="&#10;cloud supported flag is added while creating instance.">
+      <option name="closed" value="true" />
+      <created>1715313139173</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1715313139173</updated>
+    </task>
+    <task id="LOCAL-00067" summary="&#10;documentation added.">
+      <option name="closed" value="true" />
+      <created>1715313392779</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1715313392779</updated>
+    </task>
+    <task id="LOCAL-00068" summary="&#10;documentation added.">
+      <option name="closed" value="true" />
+      <created>1715313450385</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1715313450385</updated>
+    </task>
+    <task id="LOCAL-00069" summary="raise exception if data is not inserted properly to the cache table.">
+      <option name="closed" value="true" />
+      <created>1715321016593</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1715321016593</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- refactor and in tasks redis related code removed." />
+    <MESSAGE value="- task_id is added using uuid for subtask signature, by default it is not auto created." />
+    <MESSAGE value="- CELERY_TRACK_STARTED config is added.&#10;- for final_task, ignore_result is added&#10;- error and success case for task is added.&#10;- remove unnecessary imports and commented code." />
+    <MESSAGE value="- missing optional parameter is added.&#10;- get_file_full_path_using_object&#10;also added to base class" />
+    <MESSAGE value="- typo" />
+    <MESSAGE value="- get_file_full_path validation added." />
+    <MESSAGE value="- first apis sequence is added to decide the mapping." />
+    <MESSAGE value="- uploaded to s3 working" />
+    <MESSAGE value="- make it public file feature added&#10;- get_pre_signed_url issue resolved." />
+    <MESSAGE value="- resolved." />
+    <MESSAGE value=": working offline flow&#10;- sub-task-based flow has been configured&#10;- real time update for is_stream api is broadcast to redis key&#10;- stream api /project/task/&lt;redis_stream_key&gt;/stream has been created&#10;- real time update api /project/&lt;project_id&gt;/real-time-update has been created,&#10;- task api /project/task/&lt;api_name&gt; has been created,&#10;- api_name column is added to prompt table&#10;- refactored code&#10;- stream channel are present is_pubsub_channel redis method is added.&#10;- Class based api has been developed to make logic unified in one place&#10;- celery configuration: QUEUED when task is triggered instead of PENDING due to complication on task distinguish." />
+    <MESSAGE value="remove update_redis_after_completion function which is not used." />
+    <MESSAGE value="remove project_api_task_tracker table from sql file" />
+    <MESSAGE value="- remove api_task_compeleted_inceptor function." />
+    <MESSAGE value="WIP" />
+    <MESSAGE value="valid response is added." />
+    <MESSAGE value="&#10;- section_type column is added to track sub-apis&#10;- &quot;IN&quot; operator supported SQL select query formation modification has been done&#10;- Updated all related query to suppport section types." />
+    <MESSAGE value="&#10;- solr document indexing module has been done&#10;- related configuration in config and requirements.txt are added" />
+    <MESSAGE value="&#10;- added indexing in post and delete method while creating a project." />
+    <MESSAGE value="&#10;- uncomment code" />
+    <MESSAGE value="&#10;- remove print code" />
+    <MESSAGE value="&#10;- made an api that indexed all projects everytime to solr services" />
+    <MESSAGE value="&#10;cloud supported flag is added while creating instance." />
+    <MESSAGE value="&#10;documentation added." />
+    <MESSAGE value="raise exception if data is not inserted properly to the cache table." />
+    <option name="LAST_COMMIT_MESSAGE" value="raise exception if data is not inserted properly to the cache table." />
+  </component>
+</project>

@@ -1,0 +1,108 @@
+.invention-disclosure-container{
+    padding: 15px 20px 20px 20px!important;
+    background-color: #eff4fd;
+    width: 72vw;
+    
+}
+
+.invention-disclosure-title {
+  //   margin-right: -6px;
+  background: white;
+  padding: 7px 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  gap: 9px;
+  border: 1px solid #f1e6e6;
+  border-bottom : none;
+  span{
+    font-weight: bold;
+    margin-left: 10px;
+  }
+}
+
+
+.invention-disclosure-invention-textarea, .invention-disclosure-claim-textarea{
+  width: 100% ;
+  border: 1px solid white ;
+  padding: 15px;
+  min-height: 200px ;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-family: arial;
+  color: #717171;
+  opacity: 1;
+  font-size: 17px;
+  padding-left: 19px;
+  line-height: 20px;
+  padding-right: 19px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  resize: none;
+  background-color: white;
+  border: 1px solid #f1e6e6;
+  word-break: break-word;
+  height: max-content;
+
+  .invention-disclosure-generating-data{
+    border-radius: 10px;
+  }
+}
+.invention-disclosure-claim-textarea{
+    min-height: 250px ;
+}
+
+.invention-container-header-container{
+    span{
+        display: inline-block;
+        margin-left: 2px;
+        font-weight: bold;
+    }
+
+    img{
+        cursor: pointer;
+    }
+}
+
+.invention-disclosure-invention-abstract-container{
+  // border-radius: 10px;
+  .details-skeleton-section{
+    margin-top: -60px;
+  }
+} 
+
+.invention-disclosure-generating-data{
+  // border-radius: 10px;
+}
+
+.invention-disclosure-pre-tag{
+  margin: 0px;
+  width: 100% !important;
+  border: 1px solid white !important;
+  padding-top: 15px;
+  /* min-height: 700px !important; */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  /* border-bottom: 10px; */
+  font-family: arial;
+  color: #717171;
+  opacity: 1;
+  font-size: 17px;
+  padding-left: 19px;
+  line-height: 20px;
+  padding-right: 19px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  resize: none;
+  background-color: white;
+  overflow: scroll;
+  max-height: 250px;
+  word-break: break-word;
+}
+.invention-disclosure-invention-pre-tag{
+  max-height: 200px;
+}

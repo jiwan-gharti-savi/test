@@ -1,0 +1,656 @@
+# insert/update document details
+
+update_sysusers:
+    query: >
+        INSERT INTO auth.sysusers({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING sysuser_id
+    conflict: ["email"]
+    type: insert
+
+update_privilege:
+    query: >
+        INSERT INTO auth.role_privilege({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING role_id, privilege_id
+    conflict: ["role_id", "privilege_id"]
+    type: insert
+
+update_project:
+    query: >
+        INSERT INTO project.project({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING project_id,prior_art
+    conflict: ["project_id"]
+    type: insert
+
+update_project_history:
+    query: >
+        INSERT INTO project.project_history({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING project_history_id
+    conflict: ["project_history_id"]
+    type: insert
+
+update_sections:
+    query: >
+        INSERT INTO project.sections({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING section_id
+    conflict: ["project_id", "section_type"]
+    type: insert
+
+update_is_selected:
+    query: >
+        INSERT INTO project.section_history({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING section_id
+    conflict: ["section_history_id"]
+    type: insert
+
+update_selected_true:
+    query: >
+        INSERT INTO project.section_history({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING section_history_id
+    conflict: ["section_history_id"]
+    type: insert
+
+update_section_history:
+    query: >
+        INSERT INTO project.section_history({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING section_history_id
+    conflict: ["section_history_id"]
+    type: insert
+
+update_figures_section_history:
+    query: >
+        INSERT INTO project.figures_section_history({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING section_history_id
+    conflict: ["section_history_id"]
+    type: insert
+
+update_block_diagram_section_history:
+    query: >
+        INSERT INTO project.block_diagram_section_history({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING section_history_id
+    conflict: ["section_history_id"]
+    type: insert
+
+update_embodiments_figures_section_history:
+    query: >
+        INSERT INTO project.embodiments_figures_section_history({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING section_history_id
+    conflict: ["section_history_id"]
+    type: insert
+
+update_reports_activity:
+    query: >
+        INSERT INTO reports.activity({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING activity_id
+    conflict: ["activity_id"]
+    type: insert
+
+update_reports_openai_activity:
+    query: >
+        INSERT INTO reports.openai_activity({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING activity_id
+    conflict: ["activity_id"]
+    type: insert
+
+update_excute_prompt_steps:
+    query: >
+        INSERT INTO prompt.execute_prompts({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING execute_prompt_id
+    conflict:
+        [
+            "project_id",
+            "section_type",
+            "prompt_seq_id",
+            "section_history_id",
+            "repeat_seq_id",
+            "is_error",
+        ]
+    type: insert
+
+update_sections_on_selected_claim:
+    query: >
+        UPDATE
+            project.sections
+        SET
+            section_history_id = t.section_history_id,
+            claim_section_history_id = t.claim_section_history_id
+        FROM (
+            SELECT
+                s.section_id,
+                sh.section_history_id,
+                sh.claim_section_history_id
+            FROM
+                project.sections s
+            LEFT JOIN project.section_history sh ON s.project_id = sh.project_id
+                AND s.section_type = sh.section_type
+                AND s.section_type NOT in('flowchart_diagram', 'block_diagram')
+                AND sh.section_history_id IS NOT NULL
+        {filters}
+        ) AS t
+        WHERE
+            project.sections.section_id = t.section_id
+        RETURNING project.sections.section_id
+    filters: ["s.project_id", "sh.claim_section_history_id"]
+    type: select
+
+update_sections_on_selected_claim_for_figures:
+    query: >
+        UPDATE
+            project.sections
+        SET
+            section_history_id = t.section_history_id,
+            claim_section_history_id = t.claim_section_history_id
+        FROM (
+            SELECT
+                s.section_id,
+                sh.section_history_id,
+                sh.claim_section_history_id
+            FROM
+                project.sections s
+            LEFT JOIN project.figures_section_history sh ON s.project_id = sh.project_id
+                AND s.section_type = sh.section_type
+                AND s.section_type in ('flowchart_diagram', 'block_diagram')
+                AND sh.section_history_id IS NOT NULL
+        {filters}
+        ) AS t
+        WHERE
+            project.sections.section_id = t.section_id
+        RETURNING project.sections.section_id
+    filters: ["s.project_id", "sh.claim_section_history_id"]
+    type: select
+
+update_figure_data:
+    query: >
+        INSERT INTO project.figures ({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING fig_id
+    conflict: ["fig_id"]
+    type: insert
+
+
+update_archive:
+    query: >
+        INSERT INTO project.project ({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING project_id
+    conflict: ["project_id"]
+    type: insert
+
+
+update_user_file:
+    query: >
+        INSERT INTO project.user_file({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING user_file_uuid
+    conflict: ["user_file_uuid"]
+    type: insert
+
+update_file_detail:
+    query: >
+        INSERT INTO project.file_detail({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING file_detail_uuid
+    conflict: ["file_detail_uuid"]
+    type: insert
+
+
+# ========================== select queries ========================== #
+check_access:
+    query: >
+        SELECT invention_title FROM 
+        project.project 
+        {filters}
+
+    filters: ["sysuser_id", "project_id"]
+    type: select
+
+select_excute_prompt_steps:
+    query: >
+        SELECT * FROM 
+        prompt.execute_prompts
+        {filters}
+    filters:
+        [
+            "project_id",
+            "section_type",
+            "prompt_seq_id",
+            "section_history_id",
+            "repeat_seq_id",
+            "is_error"
+        ]
+    type: select
+
+select_sysusers:
+    query: >
+        SELECT sysuser_id, role_id, email FROM 
+        auth.sysusers
+        {filters}
+
+    filters: ["email", "password", "sysuser_id"]
+    type: select
+
+select_roles:
+    query: >
+        SELECT name FROM 
+        auth.sysrole
+        {filters}
+
+    filters: ["id"]
+    type: select
+
+is_inserted_project:
+    query: >
+        SELECT is_inserted,prior_art_analysis FROM
+        project.project 
+        {filters}
+
+    filters: ["project_id"]
+    type: select
+
+delete_project:
+    query: >
+        DELETE FROM project.{table}
+        {filters}
+        RETURNING project_id
+    filters: ["project_id"]
+    type: delete
+
+
+load_all_project:
+    query: >
+        SELECT project_id, invention_title, project_type, is_archive,  TO_CHAR(created_at, 'MM/DD/YYYY') as created_at FROM
+        project.project {filters}
+        GROUP BY invention_title, project_id, created_at
+        ORDER BY project_id DESC;
+
+    filters: ["sysuser_id","is_archive"]
+    type: select
+
+invention_title:
+    query: >
+        SELECT invention_title, novelty, claims_style FROM
+        project.project 
+        {filters}
+
+    filters: ["project_id"]
+    type: select
+
+prior_art:
+    query: >
+        SELECT prior_art,prior_art_analysis FROM
+        project.project
+        {filters}
+
+    filters: ["project_id"]
+    type: select
+
+project_type:
+    query: >
+        SELECT project_type, sysuser_id FROM
+        project.project
+        {filters}
+
+    filters: ["project_id"]
+    type: select
+
+select_project_history:
+    query: >
+        SELECT invention_title, project_history_id, project_id, prior_art, prior_art_analysis, time,is_error, is_selected, claims_style, filters FROM
+        project.project_history {filters}
+        ORDER BY project_history_id DESC
+
+    filters:
+        ["project_id", "project_history_id", "invention_title", "is_selected"]
+    type: select
+
+select_one_project_history:
+    query: >
+        SELECT invention_title, project_history_id, project_id, time,is_error,prior_art, prior_art_analysis FROM
+        project.project_history {filters}
+        ORDER BY project_history_id ASC LIMIT 1
+
+    filters: ["project_history_id"]
+    type: select
+
+select_one_sections:
+    query: >
+        SELECT s.section_type as section_type, sh.claim_section_history_id, sh.is_error, sh.is_redraft, sh.message, sh.message_long, sh.project_history_id, sh.section_history_id, sh.text FROM project.sections s JOIN project.section_history sh ON s.section_history_id = sh.section_history_id and s.project_id = sh.project_id and s.section_type not in ('flowchart_diagram','block_diagram')
+        {filters}
+    filters: ["sh.project_id", "sh.is_error", "section_type", "sh.text"]
+    type: select
+
+select_one_figure_sections:
+    query: >
+        SELECT s.section_type as section_type, sh.list_of_figures, sh.breif_descriptions,  sh.element_explanations is null as is_common_error, sh.claim_section_history_id, sh.detailed_description_figures, sh.diagram_available, sh.mermaids, sh.message, sh.message_long, sh.project_history_id, sh.response_step3, sh.section_history_id, sh.text, sh.is_redraft, sh.is_error, sh.is_dd_error, sh.main_mermaid, sh.main_breif_description FROM project.sections s JOIN project.figures_section_history sh ON s.section_history_id = sh.section_history_id and s.project_id = sh.project_id and s.section_type in ('flowchart_diagram','block_diagram','extra_diagram', 'total_detailed_description')
+        {filters}
+    filters: ["sh.project_id", "sh.is_error", "section_type", "sh.text"]
+    type: select
+
+select_one_section_type:
+    query: >
+        SELECT section_id, claim_section_history_id, is_error, project_history_id, section_history_id, section_type, text FROM
+        project.sections 
+        {filters}
+
+    filters: ["project_id", "section_type"]
+    type: select
+
+is_selected_true:
+    query: >
+        SELECT section_history_id,section_type,project_id,claim_section_history_id FROM
+        project.section_history
+        {filters}
+        LIMIT 1
+    filters: ["project_id", "section_type", is_selected]
+    type: select
+
+select_figures_section_history_internal:
+    query: >
+        SELECT * FROM project.figures_section_history
+        {filters}
+        order by  section_history_id DESC
+    filters:
+        [
+            section_history_id,
+            section_id,
+            project_id,
+            section_type,
+            text,
+            prompt,
+            messages,
+            action_type,
+            is_deleted,
+            created_at,
+            modified_at,
+            version,
+            is_error,
+            message,
+            message_long,
+            is_selected,
+            prev_section_history_id,
+            claim_section_history_id,
+            project_history_id,
+            prompt_step1,
+            response_step1,
+            prompt_step2,
+            response_step2,
+            prompt_step3,
+            step_completed,
+            is_redraft,
+            diagram_available,
+            completion_tokens,
+            prompt_tokens,
+            total_tokens,
+            list_of_figures,
+            detailed_description_figures,
+            response_step3,
+            parsed_json,
+            mermaids,
+            breif_descriptions,
+            flowchart_main_element_nums,
+            is_dd_error,
+            user_figures,
+            references_explanation,
+            claim_step_actions,
+            element_explanations,
+            claim_nums,
+            decision_steps,
+            revised_step_description,
+            claim_component_entities,
+            claim_component_actions,
+            additional_entities_to_describe,
+            introduction_method,
+            main_mermaid,
+            main_breif_description,
+            deduplication_description,
+            element_explanations_desc,
+            decision_step,
+            detailed_descriptions,
+            missing_attributes_desc
+        ]
+    type: select    
+
+select_figures_section_history:
+    query: >
+        SELECT breif_descriptions, claim_section_history_id, detailed_description_figures, diagram_available, mermaids, message, message_long, project_history_id, response_step3, section_history_id, section_type, text, is_redraft, is_error, is_dd_error FROM project.figures_section_history
+        {filters}
+        order by  section_history_id DESC
+    filters:
+        [
+            "project_id",
+            "project_history_id",
+            "section_type",
+            "text",
+            "is_error",
+            "section_history_id",
+            "is_selected",
+            "step_completed",
+        ]
+    type: select
+
+select_section_history:
+    query: >
+        SELECT section_history_id,message, section_id, project_id, section_type, text, action_type, is_deleted, created_at, version, is_error, message_long,is_selected, prev_section_history_id,  claim_section_history_id, project_history_id, is_redraft,prompt FROM project.section_history
+        {filters}
+        order by  section_history_id DESC
+    filters:
+        [
+            "project_id",
+            "project_history_id",
+            "section_type",
+            "text",
+            "is_error",
+            "section_history_id",
+            "is_selected",
+            "step_completed",
+            "claim_section_history_id",
+        ]
+    type: select
+
+select_edit_section_history:
+    query: >
+        select section_history_id,message, section_id, project_id, section_type, text, action_type, is_deleted, created_at, version, is_error, message_long,is_selected, prev_section_history_id,  claim_section_history_id, project_history_id, is_redraft,prompt from
+        ( 
+            select * , row_number() over (partition by section_type order by section_history_id desc) as rank
+            from 
+            project.section_history 
+            {filters}
+        ) as t where rank = 1
+    filters:
+        [
+            "project_id",
+            "project_history_id",
+            "section_type",
+            "text",
+            "is_error",
+            "section_history_id",
+            "is_selected",
+            "step_completed",
+            "claim_section_history_id",
+        ]
+    type: select
+
+select_edit_figures_section_history:
+    query: >
+        select section_history_id,message, section_id, project_id, section_type, text, action_type, is_deleted, created_at, version, is_error, message_long,is_selected, prev_section_history_id,  claim_section_history_id, project_history_id, is_redraft,prompt from
+        ( 
+            select * , row_number() over (partition by section_type order by section_history_id desc) as rank
+            from 
+            project.figures_section_history 
+            {filters}
+        ) as t where rank = 1
+    filters:
+        [
+            "project_id",
+            "project_history_id",
+            "section_type",
+            "text",
+            "is_error",
+            "section_history_id",
+            "is_selected",
+            "step_completed",
+            "claim_section_history_id",
+        ]
+    type: select
+
+select_section_history_internal:
+    query: >
+        SELECT * FROM project.section_history
+        {filters}
+        order by  section_history_id DESC
+    filters:
+        [
+            "project_id",
+            "project_history_id",
+            "section_type",
+            "text",
+            "is_error",
+            "section_history_id",
+            "is_selected",
+            "step_completed",
+            "claim_section_history_id",
+        ]
+    type: select
+
+check_each_section_type:
+    query: >
+        SELECT section_id,project_history_id,text FROM project.sections
+        {filters}
+    filters: ["project_id", "section_type"]
+    type: select
+
+is_detailed_discription_based_on_same_claim:
+    query: >
+        SELECT  claim_section_history_id from project.section_history
+        {filters}
+    filters: ["claim_section_history_id", "section_type"]
+    type: select
+
+figures_based_on_same_claim:
+    query: >
+        SELECT text, breif_descriptions, claim_section_history_id, detailed_description_figures,diagram_available, is_error, is_dd_error, list_of_figures, mermaids, message, message_long, project_history_id, element_explanations as response_step3, section_history_id, section_type, element_explanations is null as is_common_error, "main_mermaid", "main_breif_description", user_figures from project.figures_section_history
+        {filters}
+        ORDER BY section_history_id DESC LIMIT 1
+    filters:
+        [
+            "claim_section_history_id",
+            "section_type",
+            "is_error",
+            "diagram_available",
+        ]
+    type: select
+
+
+figures_based_on_claim:
+    query: >
+        SELECT text, breif_descriptions, claim_section_history_id, detailed_description_figures,diagram_available, detailed_descriptions, is_error, is_dd_error, list_of_figures, mermaids, message, message_long, project_history_id, element_explanations as response_step3, section_history_id, section_type, element_explanations is null as is_common_error, "main_mermaid", "main_breif_description", user_figures, missing_attributes_desc from project.figures_section_history
+        {filters}
+        ORDER BY section_history_id DESC
+    filters:
+        [
+            "claim_section_history_id",
+            "section_type",
+            "is_error",
+            "diagram_available",
+        ]
+    type: select
+
+
+select_section_history_for_redraft:
+    query: >
+        select project_id, min(count) as drafted_count, count(*) as completed_sections from (
+        select section_type, project_id, count(*) as count
+        from project.section_history
+        {filters}
+        group by section_type, project_id ) as t   group by project_id
+    filters: [" project_id", "is_error"]
+    type: select
+
+select_prompt_steps:
+    query: >
+        select p.name, p.version, ps.*, ps.inputs is not NULL as is_input, ps.outputs is not NULL as is_output, ps.fun_def is not NULL as is_fun, p.model as prompt_model, ps.model as prompt_seq_model
+        from prompt.prompt p join prompt.prompt_seq ps on p.prompt_id = ps.prompt_id 
+        {filters} ORDER BY ps.seq ASC
+    filters: ["name", "is_selected"]
+    type: select
+
+select_default_templates:
+    query: >
+        select name, value
+        from prompt.templates
+    filters: []
+    type: select
+
+select_figure_data:
+    query: >
+        SELECT fig_id, name, summary, brief_description, detailed_description, domain, sysuser_id, project_id, base64_image from project.figures
+        {filters}
+    filters: ["project_id", "access_level", "is_selected", "domain"]
+    type: select
+
+## --- file storage ---
+
+select_file_storage:
+    query: >
+        SELECT 
+           id, user_id, project_id, version, storage_provider, location, created_at, modified_at,
+        from storage.file_storage
+        {filters}
+    filters: [ "id", 'project_id', 'user_id', 'file_name', 'storage_provider']
+    type: select
+
+update_file_storage:
+    query: >
+        INSERT INTO storage.file_storage({columns}) VALUES({values})
+        ON CONFLICT ({conflict})
+        DO {update_query}
+        RETURNING id, user_id, project_id, file_name
+    conflict: [ "user_id", "project_id", "version", "file_name" ]
+    type: insert
+
+
+get_privileges_by_role:
+    query: >
+        select p.name, p.tool
+        FROM auth.sysrole sr join auth.role_privilege rp on sr.id = rp.role_id join auth.privilege p on rp.privilege_id = p.id 
+        {filters}
+    filters: ["sr.name"]
+    type: select
+
+get_user_file:
+    query: >
+        select * from project.user_file
+        {filters}
+    filters: ["user_file_uuid"]
+    type: select

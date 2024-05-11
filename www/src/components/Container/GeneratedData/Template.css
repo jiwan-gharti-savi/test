@@ -1,0 +1,376 @@
+
+.template-modal{
+  height: 92vh !important;
+ /* overflow-y: auto !important; */
+ max-height: none !important;
+ width: 95vw !important;
+ max-width: none ;
+
+}
+
+.prompt-main-container{
+max-width: none;
+width: 100%;
+/* padding-left: 0px;
+padding-right: 0px; */
+/* border-bottom: 1px solid #aaa; */
+}
+
+.template-outer-container{
+height: 570px;
+height: calc(100vh - 168px);
+overflow-y: auto;
+position: relative;
+/* border-bottom: 1px solid #aaa; */
+background-color: white;
+border-left: 1px solid #aaa;
+border-right: 1px solid #aaa;
+
+}
+.template-bottom-buttons{
+position: fixed;
+/* top: 90.3%; */
+width: 99.7%;
+background-color: #eff4fd;
+bottom: 1%;
+/* padding-top: 15px; */
+left: 1%;
+}
+
+.template-form{
+/* display: flex; */
+flex-direction: column;
+margin-top: -1px;
+color: #535353 !important;
+font-size: 1rem;
+text-transform: capitalize;
+font-weight: 700;
+font-family: "Arial";
+line-height: 1rem;
+/* margin-bottom: -24px; */
+margin-left: 10px;
+/* display: flex; */
+flex-direction: column;
+gap: 10px;
+/* border-bottom: 1px solid #aaa; */
+padding-bottom: 26px;
+position: relative;
+margin-right: 10px;
+background: white;
+padding: 15px;
+/* border-radius: 0px 0px 5px 5px; */
+/* min-height:calc(100vh - 200px);  */
+/* min-height:200px; ; */
+
+}
+
+
+
+.template-form input{
+  margin-top: 1px !important;
+  height: 35px;
+  border: none;
+  border: 1px solid #dce1e3;
+  border-radius: 5px;
+  /* color: #222124 !important; */
+  font-family: "arial";
+  font-size: 16px;
+  font-weight: 100;
+  padding: 1%;
+  color: #717171;
+}
+
+.detailed-description-textarea{
+  border: none;
+  border: 1px solid #dce1e3;
+  border-radius: 5px;
+  color: #717171 !important;
+  font-family: "arial";
+  padding: 1%;
+  height: 245px !important;
+  height: 100% !important;
+  min-height: calc(100vh - 550px) ; 
+  line-height: 1.2rem;
+  font-weight: 100;
+  text-shadow: none;
+  opacity: 1;
+  overflow: hidden;
+  white-space: pre-line;
+  resize: none;
+  max-width: 100ch;
+}
+
+.detailed-description-textarea:focus{
+outline: none;
+}
+
+.template-summary-textarea{
+/* min-height: 50px !important;
+min-height :50px !important; */
+border: 1px solid #dce1e3;
+border-radius: 5px;
+padding: 1%;
+line-height: 1.2rem;
+font-weight: 100;
+white-space: pre-line;
+color: #717171 !important;
+min-height: 85px !important;
+height: 30px !important;
+}
+.template-summary-textarea:focus{
+outline: none;
+}
+
+.template-title{
+  position: relative;
+}
+
+.template-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #dce1e3;
+  top: 30px;
+}
+
+
+.claim-type-out-cont{
+  margin-top: 65px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  position: relative;
+  z-index: 1;
+  padding: 0px 10px;
+}
+
+.claim-type-cont{
+  display: flex;
+  flex-direction: row;
+  padding: 5px 10px;
+  border: 1px solid #c3b4b4;
+  border-radius: 5px;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.type-claim-arrow{
+ display: none;
+}
+
+.claim-type-div{
+  display: flex;
+  flex-direction: column;
+}
+.claim-type-cont:hover{
+  background: #073bb2;
+  color: white;
+}
+
+.claim-type-cont:hover .type-claim-arrow {
+ display: block;
+}
+
+.claim-type-cont:hover .type-claim-arrow-blue{
+  display: none;
+}
+
+
+.claim-type-cont:hover .claim-type-detail {
+  color: white;
+}
+
+.claim-type-detail{
+  font-size: 12px;
+  color: #6b6b71;
+}
+
+.tempalte-textarea-label{
+  margin-top: 10px;
+}
+.react-tabs__tab-list {
+  /* border-bottom: 1px solid #6b6b71 !important; */
+}
+.react-tabs__tab--selected::after{
+ /* display: none !important; */
+}
+
+.template-figure-heading{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  color: #535353 !important;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: "Arial";
+  line-height: 1rem;
+  /* margin-bottom: -24px; */
+  margin-left: 10px;
+  /* display: flex; */
+ 
+}
+
+.react-tabs__tab-list > .react-tabs__tab:first-child{
+  /* margin-left: 10px !important; */
+}
+
+.react-tabs__tab{
+  position: relative;
+  border-bottom: none; /* Remove the default border-bottom */
+  /* color: white; */
+}
+
+  .template-cancel-form-button{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    cursor: pointer;
+    display: none;
+  }
+
+.template-no-data-image{
+  text-align: center;
+  width: 50%;
+}
+
+.prompt-cont-flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-data-image-cont{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding-bottom: 35px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.react-tabs__tab-list{
+/* background-color: #073bb2;
+padding-top: 8px;
+border-radius: 9px 9px 1px 1px; */
+}
+
+.template-summary-word-limit-cont{
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 5px;
+}
+
+.template-summary-word-limit{
+font-size: 0.8rem;
+display: inline-block;
+margin-left: 2px;
+}
+
+.template-summary-word-limit-exceed{
+background-color: #f97e57;
+color: white;
+padding: 4px 8px;
+/* width: 36%; */
+border-radius: 5px;
+font-family: arial;
+display: inline-block;
+font-size: 0.8rem;
+}
+
+.template-loading-icon-container{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: auto;
+/* height: 28%; */
+margin-top: 40vh;
+& img{
+  width: 24px;
+}
+}
+.react-tabs__tab-list{
+margin-bottom: 0px !important;
+position: relative;
+z-index: 100;
+}
+
+.form-outer-container{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+background-color: white;
+}
+.form-container{
+/* padding-bottom: 30px; */
+border-bottom: 1px solid #dce1e3;
+}
+.react-tabs__tab--selected{
+position: relative !important;
+}
+
+.react-tabs__tab--selected:focus::after {
+content: '';
+position: absolute;
+/* bottom: 32px; */
+left: 0px !important;
+width: 100% !important;
+height: 5px !important;
+background-color: white;
+top: 32px !important;
+z-index: 100 !important;
+}
+.react-tabs__tab--selected::after {
+content: '';
+position: absolute;
+/* bottom: 32px; */
+left: 1px;
+width: 99%;
+height: 5px;
+background-color: white;
+top: 32px;
+z-index: 100;
+}
+
+
+.prompt-cont-template{
+background-color: white;
+/* border-left: 1px solid #aaa;
+border-right: 1px solid #aaa; */
+margin-left: 0.2px;
+}
+
+.react-tabs {
+border-bottom: 1px solid #aaa;
+}
+
+@media (min-height: 800px)  {
+/* Your styles go here */
+.template-bottom-buttons{
+  bottom: 0%;
+   /* width: 100%;  */
+  left: 0.6%;
+}
+.template-outer-container{
+  height: calc(100vh - 190px);
+}
+.detailed-description-textarea{
+  min-height: calc(100vh - 560px);
+}
+.react-tabs {
+  border-bottom: 2px solid #aaa;
+  max-width: 100%
+}
+/* .template-outer-container{
+  height: 570px;
+  height: calc(100vh - 195px);
+  overflow-y: auto;
+  position: relative;
+} */
+}
+

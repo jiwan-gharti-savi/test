@@ -1,0 +1,1348 @@
+{
+	"endpoints": {
+		"login": "login",
+		"signup": "signup",
+		"insert_project_data": "insert_project_data",
+		"load_all_project": "load_all_project",
+		"get_title": "Title",
+		"get_abstract": "Abstract",
+		"get_description": "detail_Description",
+		"get_background_description": "background_Description",
+		"get_technical_field": "technical_Field",
+		"get_summary": "summary",
+		"get_claims": "Claims",
+		"get_list_of_figures": "list_of_figures",
+		"update_project_data": "update_project_data",
+		"update_section_data": "update_section_data",
+		"select_section_history": "select_section_history",
+		"select_one_section": "select_one_section",
+		"is_inserted_project": "is_inserted_project",
+		"get_invention_title": "get_invention_title",
+		"insert_section_history": "insert_section_history",
+		"insert_sections": "insert_sections",
+		"check_user_access_to_project": "check_access",
+		"get_detailed_description_figure": "detailed_description_figures",
+		"export_project": "export_project",
+		"export_priorart": "export_prior_art",
+		"prior_art": "similarity",
+		"insert_project_history_data": "insert_project_history_data",
+		"select_project_history": "select_project_history",
+		"check_data_of_each_section_type": "check_data_of_each_section_type",
+		"select_one_project_history": "select_one_project_history",
+		"update_invention": "update_invention_title",
+		"is_finished": "is_finished",
+		"select_one_section_history": "select_one_section_history",
+		"is_DD_based_on_same_claim": "is_DD_based_on_same_claim",
+		"is_re_draft_claim": "is_re_draft_claim",
+		"download_btn_active": "download_btn_active",
+		"is_prior_art": "is_prior_art",
+		"flowchart_diagram": "flowchart_diagram",
+		"select_flowchart_diagram": "select_flowchart_diagram",
+		"select_flowchart_diagram_clm": "select_flowchart_diagram_clm",
+		"verify_session": "verify_session",
+		"block_diagram": "block_diagram",
+		"regenerate_claim": "regenerate_claim",
+		"select_block_diagram_clm": "select_block_diagram_clm",
+		"select_regenerate_claim": "select_regenerate_claim",
+		"embodiments_figures": "embodiments_figures",
+		"select_embodiments_figures_clm": "select_embodiments_figures_clm",
+		"is_selected_clm_id": "is_selected_clm_id",
+		"get_extra_embodiment_details": "get_extra_embodiment_details",
+		"get_extra_embodiments_method": "get_extra_embodiments_method",
+		"get_extra_embodiments_system": "get_extra_embodiments_system",
+		"get_detail_description_part": "get_detail_description_part",
+		"embodiments_figures_description": "embodiments_figures_description",
+		"embodiments_flowchart_figures": "embodiments_flowchart_figures",
+		"embodiments_flowchart_description_figures": "embodiments_flowchart_description_figures",
+		"embodiments_block_diagram": "embodiments_block_diagram",
+		"embodiments_block_diagram_description": "embodiments_block_diagram_description",
+		"select_embodiments_flowchart_figures_clm": "select_embodiments_flowchart_figures_clm",
+		"select_embodiments_flowchart_description_figures_clm": "select_embodiments_flowchart_description_figures_clm",
+		"select_embodiments_block_diagram_clm": "select_embodiments_block_diagram_clm",
+		"select_embodiments_block_diagram_description_clm": "select_embodiments_block_diagram_description_clm",
+		"flowchart_description": "flowchart_description",
+		"block_diagram_description": "block_diagram_description",
+		"select_one_section_type": "select_one_section_type",
+		"flowchart_common": "flowchart_common",
+		"block_diagram_common": "block_diagram_common",
+		"update_project_history": "update_project_history",
+		"update_figure_data": "update_figure_data",
+		"select_figure_data": "select_figure_data",
+		"select_project_figure_data": "select_project_figure_data",
+		"invention_disclosure_claim": "invention_disclosure_claim",
+		"invention_disclosure_invention": "invention_disclosure_invention",
+		"is_claim_invention": "is_claim_invention",
+		"select_other_detailed_description_clm": "select_other_detailed_description_clm",
+		"other_detailed_description_common": "extra_diagram_common",
+		"other_detailed_description": "extra_description",
+		"insert_claim_data": "insert_claim_data",
+		"claim_invention": "claim_invention",
+		"select_separate_detailed_description": "select_total_detailed_description_clm",
+		"separate_detailed_description": "total_detailed_description",
+		"delete_project_data": "delete_project_data",
+		"archive_project_data": "archive_project_data",
+		"search_project_data": "search_project_data",
+		"priorart_auto_complete": "priorart_auto_complete",
+		"auth_request_2fa" :"auth_request_2fa",
+		"auth_validate_2fa" :"auth_validate_2fa",
+		"auth_request_2fa_sms" : "auth_request_2fa_sms",
+		"stytchReset" : "passreset",
+		"magiclink" : "magiclink",
+		"auth" : "auth",
+		"auth_check_email" : "auth_check_email",
+		"auth_login" : "auth_login",
+		"auth_reset_password" : "auth_reset_password",
+		"auth_set_password" : "auth_set_password",
+		"auth_logout":"auth_logout",
+		"role_check_to_access" : "role_check_to_access",
+		"reference_files_upload" : "reference_files_upload",
+		"get_novelty" : "get_novelty"
+	},
+	"expected_time_out": {
+		"get_description": 120000,
+		"get_summary": 120000,
+		"get_claims": 60000,
+		"prior_art": 168000,
+		"flowchart_diagram": 90000,
+		"block_diagram": 150000,
+		"regenerate_claim": 660000,
+		"embodiments_figures": 240000,
+		"embodiments_flowchart_figures": 240000,
+		"embodiments_block_diagram": 240000,
+		"flowchart_detaild_description_of_figure": 78000,
+		"block_diagram_detaild_description_of_figure": 210000,
+		"document_upload" : 120000,
+		"pulseloader": {
+			"color": "#74c0fc",
+			"size": 5,
+			"speed": 0.5
+		}
+	},
+	"toaster_time": {
+		"claims": 3000,
+		"detailPage": 2000
+	},
+	"countries": [
+		{
+			"id": "us",
+			"value": "US",
+			"label": "US"
+		},
+		{
+			"id": "ep",
+			"value": "EP",
+			"label": "EP"
+		},
+		{
+			"id": "cn",
+			"value": "CN",
+			"label": "CN"
+		},
+		{
+			"id": "jp",
+			"value": "JP",
+			"label": "JP"
+		},
+		{
+			"id": "kr",
+			"value": "KR",
+			"label": "KR"
+		},
+		{
+			"id": "wo",
+			"value": "WO",
+			"label": "WO"
+		},
+		{
+			"id": "in",
+			"value": "IN",
+			"label": "IN"
+		},
+		{
+			"id": "de",
+			"value": "DE",
+			"label": "DE"
+		},
+		{
+			"id": "gb",
+			"value": "GB",
+			"label": "GB"
+		},
+		{
+			"id": "fr",
+			"value": "FR",
+			"label": "FR"
+		},
+		{
+			"id": "it",
+			"value": "IT",
+			"label": "IT"
+		},
+		{
+			"id": "tw",
+			"value": "TW",
+			"label": "TW"
+		},
+		{
+			"id": "ca",
+			"value": "CA",
+			"label": "CA"
+		},
+		{
+			"id": "su",
+			"value": "SU",
+			"label": "SU"
+		},
+		{
+			"id": "es",
+			"value": "ES",
+			"label": "ES"
+		},
+		{
+			"id": "se",
+			"value": "SE",
+			"label": "SE"
+		},
+		{
+			"id": "ch",
+			"value": "CH",
+			"label": "CH"
+		},
+		{
+			"id": "au",
+			"value": "AU",
+			"label": "AU"
+		},
+		{
+			"id": "ru",
+			"value": "RU",
+			"label": "RU"
+		},
+		{
+			"id": "nl",
+			"value": "NL",
+			"label": "NL"
+		},
+		{
+			"id": "at",
+			"value": "AT",
+			"label": "AT"
+		},
+		{
+			"id": "fi",
+			"value": "FI",
+			"label": "FI"
+		},
+		{
+			"id": "dk",
+			"value": "DK",
+			"label": "DK"
+		},
+		{
+			"id": "br",
+			"value": "BR",
+			"label": "BR"
+		},
+		{
+			"id": "pl",
+			"value": "PL",
+			"label": "PL"
+		},
+		{
+			"id": "be",
+			"value": "BE",
+			"label": "BE"
+		},
+		{
+			"id": "ua",
+			"value": "UA",
+			"label": "UA"
+		},
+		{
+			"id": "no",
+			"value": "NO",
+			"label": "NO"
+		},
+		{
+			"id": "cs",
+			"value": "CS",
+			"label": "CS"
+		},
+		{
+			"id": "dd",
+			"value": "DD",
+			"label": "DD"
+		},
+		{
+			"id": "hu",
+			"value": "HU",
+			"label": "HU"
+		},
+		{
+			"id": "il",
+			"value": "IL",
+			"label": "IL"
+		},
+		{
+			"id": "za",
+			"value": "ZA",
+			"label": "ZA"
+		},
+		{
+			"id": "tr",
+			"value": "TR",
+			"label": "TR"
+		},
+		{
+			"id": "cz",
+			"value": "CZ",
+			"label": "CZ"
+		},
+		{
+			"id": "nz",
+			"value": "NZ",
+			"label": "NZ"
+		},
+		{
+			"id": "ro",
+			"value": "RO",
+			"label": "RO"
+		},
+		{
+			"id": "ie",
+			"value": "IE",
+			"label": "IE"
+		},
+		{
+			"id": "em",
+			"value": "EM",
+			"label": "EM"
+		},
+		{
+			"id": "lu",
+			"value": "LU",
+			"label": "LU"
+		},
+		{
+			"id": "gr",
+			"value": "GR",
+			"label": "GR"
+		},
+		{
+			"id": "sg",
+			"value": "SG",
+			"label": "SG"
+		},
+		{
+			"id": "ar",
+			"value": "AR",
+			"label": "AR"
+		},
+		{
+			"id": "bg",
+			"value": "BG",
+			"label": "BG"
+		},
+		{
+			"id": "mx",
+			"value": "MX",
+			"label": "MX"
+		},
+		{
+			"id": "yu",
+			"value": "YU",
+			"label": "YU"
+		},
+		{
+			"id": "ph",
+			"value": "PH",
+			"label": "PH"
+		},
+		{
+			"id": "hk",
+			"value": "HK",
+			"label": "HK"
+		},
+		{
+			"id": "sk",
+			"value": "SK",
+			"label": "SK"
+		},
+		{
+			"id": "cl",
+			"value": "CL",
+			"label": "CL"
+		},
+		{
+			"id": "si",
+			"value": "SI",
+			"label": "SI"
+		},
+		{
+			"id": "md",
+			"value": "MD",
+			"label": "MD"
+		},
+		{
+			"id": "co",
+			"value": "CO",
+			"label": "CO"
+		},
+		{
+			"id": "hr",
+			"value": "HR",
+			"label": "HR"
+		},
+		{
+			"id": "ea",
+			"value": "EA",
+			"label": "EA"
+		},
+		{
+			"id": "cu",
+			"value": "CU",
+			"label": "CU"
+		},
+		{
+			"id": "ma",
+			"value": "MA",
+			"label": "MA"
+		},
+		{
+			"id": "lv",
+			"value": "LV",
+			"label": "LV"
+		},
+		{
+			"id": "lt",
+			"value": "LT",
+			"label": "LT"
+		},
+		{
+			"id": "ge",
+			"value": "GE",
+			"label": "GE"
+		},
+		{
+			"id": "is",
+			"value": "IS",
+			"label": "IS"
+		},
+		{
+			"id": "pe",
+			"value": "PE",
+			"label": "PE"
+		},
+		{
+			"id": "ec",
+			"value": "EC",
+			"label": "EC"
+		},
+		{
+			"id": "rs",
+			"value": "RS",
+			"label": "RS"
+		},
+		{
+			"id": "uy",
+			"value": "UY",
+			"label": "UY"
+		},
+		{
+			"id": "ee",
+			"value": "EE",
+			"label": "EE"
+		},
+		{
+			"id": "eg",
+			"value": "EG",
+			"label": "EG"
+		},
+		{
+			"id": "tn",
+			"value": "TN",
+			"label": "TN"
+		},
+		{
+			"id": "mc",
+			"value": "MC",
+			"label": "MC"
+		},
+		{
+			"id": "th",
+			"value": "TH",
+			"label": "TH"
+		},
+		{
+			"id": "id",
+			"value": "ID",
+			"label": "ID"
+		},
+		{
+			"id": "oa",
+			"value": "OA",
+			"label": "OA"
+		},
+		{
+			"id": "gt",
+			"value": "GT",
+			"label": "GT"
+		},
+		{
+			"id": "by",
+			"value": "BY",
+			"label": "BY"
+		},
+		{
+			"id": "kz",
+			"value": "KZ",
+			"label": "KZ"
+		},
+		{
+			"id": "jo",
+			"value": "JO",
+			"label": "JO"
+		},
+		{
+			"id": "do",
+			"value": "DO",
+			"label": "DO"
+		},
+		{
+			"id": "cr",
+			"value": "CR",
+			"label": "CR"
+		},
+		{
+			"id": "sm",
+			"value": "SM",
+			"label": "SM"
+		},
+		{
+			"id": "ap",
+			"value": "AP",
+			"label": "AP"
+		},
+		{
+			"id": "sa",
+			"value": "SA",
+			"label": "SA"
+		},
+		{
+			"id": "ja",
+			"value": "JA",
+			"label": "JA"
+		},
+		{
+			"id": "vn",
+			"value": "VN",
+			"label": "VN"
+		},
+		{
+			"id": "zw",
+			"value": "ZW",
+			"label": "ZW"
+		},
+		{
+			"id": "ir",
+			"value": "IR",
+			"label": "IR"
+		},
+		{
+			"id": "zm",
+			"value": "ZM",
+			"label": "ZM"
+		},
+		{
+			"id": "bx",
+			"value": "BX",
+			"label": "BX"
+		},
+		{
+			"id": "pa",
+			"value": "PA",
+			"label": "PA"
+		},
+		{
+			"id": "hn",
+			"value": "HN",
+			"label": "HN"
+		},
+		{
+			"id": "mt",
+			"value": "MT",
+			"label": "MT"
+		},
+		{
+			"id": "pk",
+			"value": "PK",
+			"label": "PK"
+		},
+		{
+			"id": "lk",
+			"value": "LK",
+			"label": "LK"
+		},
+		{
+			"id": "dz",
+			"value": "DZ",
+			"label": "DZ"
+		},
+		{
+			"id": "tj",
+			"value": "TJ",
+			"label": "TJ"
+		},
+		{
+			"id": "am",
+			"value": "AM",
+			"label": "AM"
+		},
+		{
+			"id": "uz",
+			"value": "UZ",
+			"label": "UZ"
+		},
+		{
+			"id": "ib",
+			"value": "IB",
+			"label": "IB"
+		},
+		{
+			"id": "ae",
+			"value": "AE",
+			"label": "AE"
+		},
+		{
+			"id": "ba",
+			"value": "BA",
+			"label": "BA"
+		},
+		{
+			"id": "az",
+			"value": "AZ",
+			"label": "AZ"
+		},
+		{
+			"id": "lb",
+			"value": "LB",
+			"label": "LB"
+		},
+		{
+			"id": "gc",
+			"value": "GC",
+			"label": "GC"
+		},
+		{
+			"id": "ve",
+			"value": "VE",
+			"label": "VE"
+		},
+		{
+			"id": "ke",
+			"value": "KE",
+			"label": "KE"
+		},
+		{
+			"id": "cy",
+			"value": "CY",
+			"label": "CY"
+		},
+		{
+			"id": "mn",
+			"value": "MN",
+			"label": "MN"
+		},
+		{
+			"id": "sv",
+			"value": "SV",
+			"label": "SV"
+		},
+		{
+			"id": "kp",
+			"value": "KP",
+			"label": "KP"
+		},
+		{
+			"id": "re",
+			"value": "RE",
+			"label": "RE"
+		},
+		{
+			"id": "qz",
+			"value": "QZ",
+			"label": "QZ"
+		},
+		{
+			"id": "mk",
+			"value": "MK",
+			"label": "MK"
+		},
+		{
+			"id": "li",
+			"value": "LI",
+			"label": "LI"
+		},
+		{
+			"id": "mi",
+			"value": "MI",
+			"label": "MI"
+		},
+		{
+			"id": "eu",
+			"value": "EU",
+			"label": "EU"
+		},
+		{
+			"id": "mw",
+			"value": "MW",
+			"label": "MW"
+		},
+		{
+			"id": "sy",
+			"value": "SY",
+			"label": "SY"
+		},
+		{
+			"id": "tt",
+			"value": "TT",
+			"label": "TT"
+		},
+		{
+			"id": "py",
+			"value": "PY",
+			"label": "PY"
+		},
+		{
+			"id": "bd",
+			"value": "BD",
+			"label": "BD"
+		},
+		{
+			"id": "na",
+			"value": "NA",
+			"label": "NA"
+		},
+		{
+			"id": "iq",
+			"value": "IQ",
+			"label": "IQ"
+		},
+		{
+			"id": "ta",
+			"value": "TA",
+			"label": "TA"
+		},
+		{
+			"id": "ng",
+			"value": "NG",
+			"label": "NG"
+		},
+		{
+			"id": "om",
+			"value": "OM",
+			"label": "OM"
+		},
+		{
+			"id": "me",
+			"value": "ME",
+			"label": "ME"
+		},
+		{
+			"id": "kg",
+			"value": "KG",
+			"label": "KG"
+		},
+		{
+			"id": "ni",
+			"value": "NI",
+			"label": "NI"
+		},
+		{
+			"id": "rh",
+			"value": "RH",
+			"label": "RH"
+		},
+		{
+			"id": "bo",
+			"value": "BO",
+			"label": "BO"
+		},
+		{
+			"id": "sd",
+			"value": "SD",
+			"label": "SD"
+		},
+		{
+			"id": "pc",
+			"value": "PC",
+			"label": "PC"
+		},
+		{
+			"id": "bi",
+			"value": "BI",
+			"label": "BI"
+		},
+		{
+			"id": "qa",
+			"value": "QA",
+			"label": "QA"
+		},
+		{
+			"id": "to",
+			"value": "TO",
+			"label": "TO"
+		},
+		{
+			"id": "bs",
+			"value": "BS",
+			"label": "BS"
+		},
+		{
+			"id": "al",
+			"value": "AL",
+			"label": "AL"
+		},
+		{
+			"id": "bn",
+			"value": "BN",
+			"label": "BN"
+		},
+		{
+			"id": "fa",
+			"value": "FA",
+			"label": "FA"
+		},
+		{
+			"id": "sw",
+			"value": "SW",
+			"label": "SW"
+		},
+		{
+			"id": "ht",
+			"value": "HT",
+			"label": "HT"
+		},
+		{
+			"id": "va",
+			"value": "VA",
+			"label": "VA"
+		},
+		{
+			"id": "kw",
+			"value": "KW",
+			"label": "KW"
+		},
+		{
+			"id": "bh",
+			"value": "BH",
+			"label": "BH"
+		},
+		{
+			"id": "cm",
+			"value": "CM",
+			"label": "CM"
+		},
+		{
+			"id": "pi",
+			"value": "PI",
+			"label": "PI"
+		},
+		{
+			"id": "rm",
+			"value": "RM",
+			"label": "RM"
+		},
+		{
+			"id": "aw",
+			"value": "AW",
+			"label": "AW"
+		},
+		{
+			"id": "jm",
+			"value": "JM",
+			"label": "JM"
+		},
+		{
+			"id": "mo",
+			"value": "MO",
+			"label": "MO"
+		},
+		{
+			"id": "np",
+			"value": "NP",
+			"label": "NP"
+		},
+		{
+			"id": "mu",
+			"value": "MU",
+			"label": "MU"
+		},
+		{
+			"id": "sn",
+			"value": "SN",
+			"label": "SN"
+		},
+		{
+			"id": "vi",
+			"value": "VI",
+			"label": "VI"
+		},
+		{
+			"id": "vr",
+			"value": "VR",
+			"label": "VR"
+		},
+		{
+			"id": "gm",
+			"value": "GM",
+			"label": "GM"
+		},
+		{
+			"id": "ne",
+			"value": "NE",
+			"label": "NE"
+		},
+		{
+			"id": "sp",
+			"value": "SP",
+			"label": "SP"
+		},
+		{
+			"id": "tm",
+			"value": "TM",
+			"label": "TM"
+		},
+		{
+			"id": "ud",
+			"value": "UD",
+			"label": "UD"
+		},
+		{
+			"id": "ly",
+			"value": "LY",
+			"label": "LY"
+		},
+		{
+			"id": "mg",
+			"value": "MG",
+			"label": "MG"
+		},
+		{
+			"id": "pd",
+			"value": "PD",
+			"label": "PD"
+		},
+		{
+			"id": "tv",
+			"value": "TV",
+			"label": "TV"
+		},
+		{
+			"id": "gh",
+			"value": "GH",
+			"label": "GH"
+		},
+		{
+			"id": "mz",
+			"value": "MZ",
+			"label": "MZ"
+		},
+		{
+			"id": "pv",
+			"value": "PV",
+			"label": "PV"
+		},
+		{
+			"id": "ub",
+			"value": "UB",
+			"label": "UB"
+		},
+		{
+			"id": "gf",
+			"value": "GF",
+			"label": "GF"
+		},
+		{
+			"id": "ls",
+			"value": "LS",
+			"label": "LS"
+		},
+		{
+			"id": "po",
+			"value": "PO",
+			"label": "PO"
+		},
+		{
+			"id": "tz",
+			"value": "TZ",
+			"label": "TZ"
+		},
+		{
+			"id": "ye",
+			"value": "YE",
+			"label": "YE"
+		},
+		{
+			"id": "uk",
+			"value": "UK",
+			"label": "UK"
+		},
+		{
+			"id": "cg",
+			"value": "CG",
+			"label": "CG"
+		},
+		{
+			"id": "sl",
+			"value": "SL",
+			"label": "SL"
+		},
+		{
+			"id": "so",
+			"value": "SO",
+			"label": "SO"
+		},
+		{
+			"id": "pp",
+			"value": "PP",
+			"label": "PP"
+		},
+		{
+			"id": "pr",
+			"value": "PR",
+			"label": "PR"
+		},
+		{
+			"id": "sr",
+			"value": "SR",
+			"label": "SR"
+		},
+		{
+			"id": "ug",
+			"value": "UG",
+			"label": "UG"
+		},
+		{
+			"id": "an",
+			"value": "AN",
+			"label": "AN"
+		},
+		{
+			"id": "ao",
+			"value": "AO",
+			"label": "AO"
+		},
+		{
+			"id": "bw",
+			"value": "BW",
+			"label": "BW"
+		},
+		{
+			"id": "et",
+			"value": "ET",
+			"label": "ET"
+		},
+		{
+			"id": "gy",
+			"value": "GY",
+			"label": "GY"
+		},
+		{
+			"id": "ii",
+			"value": "II",
+			"label": "II"
+		},
+		{
+			"id": "lo",
+			"value": "LO",
+			"label": "LO"
+		},
+		{
+			"id": "nj",
+			"value": "NJ",
+			"label": "NJ"
+		},
+		{
+			"id": "ny",
+			"value": "NY",
+			"label": "NY"
+		},
+		{
+			"id": "sb",
+			"value": "SB",
+			"label": "SB"
+		},
+		{
+			"id": "af",
+			"value": "AF",
+			"label": "AF"
+		},
+		{
+			"id": "bb",
+			"value": "BB",
+			"label": "BB"
+		},
+		{
+			"id": "bl",
+			"value": "BL",
+			"label": "BL"
+		},
+		{
+			"id": "bz",
+			"value": "BZ",
+			"label": "BZ"
+		},
+		{
+			"id": "ci",
+			"value": "CI",
+			"label": "CI"
+		},
+		{
+			"id": "cw",
+			"value": "CW",
+			"label": "CW"
+		},
+		{
+			"id": "dm",
+			"value": "DM",
+			"label": "DM"
+		},
+		{
+			"id": "dr",
+			"value": "DR",
+			"label": "DR"
+		},
+		{
+			"id": "eh",
+			"value": "EH",
+			"label": "EH"
+		},
+		{
+			"id": "fj",
+			"value": "FJ",
+			"label": "FJ"
+		},
+		{
+			"id": "fk",
+			"value": "FK",
+			"label": "FK"
+		},
+		{
+			"id": "ho",
+			"value": "HO",
+			"label": "HO"
+		},
+		{
+			"id": "je",
+			"value": "JE",
+			"label": "JE"
+		},
+		{
+			"id": "lr",
+			"value": "LR",
+			"label": "LR"
+		},
+		{
+			"id": "mr",
+			"value": "MR",
+			"label": "MR"
+		},
+		{
+			"id": "oc",
+			"value": "OC",
+			"label": "OC"
+		},
+		{
+			"id": "pg",
+			"value": "PG",
+			"label": "PG"
+		},
+		{
+			"id": "pn",
+			"value": "PN",
+			"label": "PN"
+		},
+		{
+			"id": "pu",
+			"value": "PU",
+			"label": "PU"
+		},
+		{
+			"id": "ra",
+			"value": "RA",
+			"label": "RA"
+		},
+		{
+			"id": "rc",
+			"value": "RC",
+			"label": "RC"
+		},
+		{
+			"id": "ur",
+			"value": "UR",
+			"label": "UR"
+		},
+		{
+			"id": "vg",
+			"value": "VG",
+			"label": "VG"
+		},
+		{
+			"id": "xb",
+			"value": "XB",
+			"label": "XB"
+		},
+		{
+			"id": "zl",
+			"value": "ZL",
+			"label": "ZL"
+		}
+	],
+	"timer_messages": {
+		"Claims": [
+			"Entity Identification",
+			"Entity Quantification",
+			"Novelty & Feature Extraction",
+			"Independent Claim Formulation",
+			"Dependent Claim Formulation",
+			"Claim Sequencing"
+		],
+		"Flowchart": [
+			"Method Claim Entity Generalization",
+			"Entity Numbering",
+			"Flowchart Dependency Assessment",
+			"Flowchart Construction"
+		],
+		"Regenerate Claims": [
+			"Claim Type & Independent Claims Identification",
+			"Specific Claim Re-Generation"
+		],
+		"Block Diagram": [
+			"System Claim Entity Generalization",
+			"System Element Numbering",
+			"System Component Grouping",
+			"Block Diagram Construction"
+		],
+		"Detailed Description": [
+			"Details Not Specified"
+		],
+		"Summary": [
+			"Claims Segregation",
+			"Independent Claim Summarization"
+		],
+		"PriorArt": [
+			"Novelty Extraction",
+			"Novelty Entity Identification",
+			"AI Search Query Construction",
+			"Top Search Result Selection",
+			"Invention-Reference Similarity Analysis",
+			"Prior-Art Report Compilation"
+		],
+		"FlowEmbodiments": [
+			"Method Claim Entity Generalization",
+			"Entity Numbering",
+			"Flowchart Dependency Assessment",
+			"Flowchart Construction"
+		],
+		"BlockEmbodiments": [
+			"Method Claim Entity Generalization",
+			"Entity Numbering",
+			"Block Diagram Dependency Assessment",
+			"Block Diagram Construction"
+		]
+	},
+	"contacts": {
+		"telephone": {
+			"samir": {
+				"us": "+1 650-269-7952"
+			},
+			"sumair": {
+				"eu": "+49 7621-986-4830"
+			}
+		},
+		"email": "support@dolcera.com",
+		"security_policy": ""
+	},
+	"mermaid": {
+		"titleFont": "",
+		"theme": "null",
+		"fontFamily": "Questrial, sans-serif",
+		"altFontFamily": "Questrial, sans-serif",
+		"logLevel": 10,
+		"arrowMarkerAbsolute": true,
+		"flowchart": {
+			"titleTopMargin": 50,
+			"useMaxWidth": true,
+			"htmlLabels": true,
+			"nodeSpacing": 20,
+			"rankSpacing": 40,
+			"curve": "linear",
+			"arrowMarkerAbsolute": true,
+			"diagramPadding": 40,
+			"padding": 10,
+			"defaultRenderer": "dagre-wrapper"
+		},
+		"sequence": {
+			"showSequenceNumbers": true
+		},
+		"useMaxWidth": true,
+		"wrap": true,
+		"fontSize": 16
+	},
+	"Transform": "AWS::Serverless-2016-10-31",
+	"Resources": {
+		"Api": {
+			"Type": "AWS::Serverless::Api",
+			"Properties": {
+				"Name": {
+					"Fn::Sub": [
+						"${ResourceName} From Stack ${AWS::StackName}",
+						{
+							"ResourceName": "Api"
+						}
+					]
+				},
+				"StageName": "Prod",
+				"DefinitionBody": {
+					"openapi": "3.0",
+					"info": {},
+					"paths": {
+						"/": {
+							"get": {
+								"responses": {}
+							}
+						}
+					}
+				},
+				"EndpointConfiguration": "REGIONAL",
+				"TracingEnabled": true
+			}
+		}
+	},
+
+	"features-0": [
+		"prior_art_explore",
+		"prior_art_masked",
+		"drafting_draft_claim",
+		"prior_art_view",
+		"drafting_view_specs",
+		"drafting_edit_specs",
+		"drafting_view_claim",
+		"drafting_prompt_specs",
+	  
+		"drafting_edit_title",
+		"drafting_edit_abstract",
+		"drafting_edit_technical_field",
+		"drafting_edit_background",
+		"drafting_edit_summary",
+		"drafting_edit_claim",
+	  
+		"drafting_prompt_title",
+		"drafting_prompt_abstract",
+		"drafting_prompt_technical_field",
+		"drafting_prompt_background",
+		"drafting_prompt_summary",
+		"drafting_prompt_claim"
+	  ]
+}

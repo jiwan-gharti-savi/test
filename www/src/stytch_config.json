@@ -1,0 +1,14 @@
+{
+
+    "development": {
+      "loginRedirectURL": "http://127.0.0.1:3000/",
+      "resetPasswordRedirectURL": "http://127.0.0.1:3000/passreset",
+      "publicToken": "public-token-test-d08cf75f-866b-453f-8f72-63de065ab0a1"
+    },
+    "production": {
+      "loginRedirectURL": "http://127.0.0.1:3000/",
+      "resetPasswordRedirectURL": "http://127.0.0.1:3000/passreset",
+      "publicToken": "'public-token-test-d08cf75f-866b-453f-8f72-63de065ab0a1"
+    }
+  
+  }

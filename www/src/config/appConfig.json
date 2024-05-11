@@ -1,0 +1,15 @@
+{
+    "baseUrl": "http://127.0.0.1:5000",
+    "basepath": "/",
+    "auth0": {
+        "domain": "dev-zeyx5msqs4uqotnl.us.auth0.com",
+        "clientId": "YAJbiunEqF8JgaSxKGuhSrc1gJo57AG7",
+        "audience": "https://dev-zeyx5msqs4uqotnl.us.auth0.com/api/v2/",
+        "appOrigin": "http://127.0.0.1:3000",
+        "apiOrigin": "http://127.0.0.1:3000"
+    },
+    "multiRetry" : true,
+    "stytch": {
+        "publicToken": "public-token-live-ecf95a8c-3d96-4cb3-83b5-c1c104dbdc5e"
+      }
+}

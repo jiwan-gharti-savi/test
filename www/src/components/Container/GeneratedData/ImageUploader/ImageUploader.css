@@ -1,0 +1,43 @@
+.image-uploader-container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+.image-container{
+    position: relative;
+    width: fit-content;
+}
+
+.image-uploader-delete-button{
+    position: absolute;
+    top: -7px;
+    right: -4px;
+    color: red;
+    cursor: pointer;
+}
+
+.image-uploader-input{
+    padding: 8px 6px !important;
+    &::-webkit-file-upload-button {
+        display: none;
+    }
+    &::file-selector-button {
+        display: none;
+    }
+
+}
+
+.image-uploader-image{
+    min-height: 100% !important;
+    max-width: calc(100vw - 1050px);
+    max-width :100%
+}
+
+
+.custom-file-upload{
+    color: blue;
+    background-color: yellow;
+}

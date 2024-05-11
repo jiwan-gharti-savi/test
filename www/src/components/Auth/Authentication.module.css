@@ -1,0 +1,101 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.left{
+flex: 1;
+}
+
+
+
+.right{
+    flex:1;
+}
+
+.rightCont{
+    width: 70%;
+    margin-top: 7%;
+}
+
+.rightCont h1{
+    font-family: 'arial';
+    font-size: 22px;
+    text-align: center;
+}
+.rightCont p{
+   
+    font-family: 'arial';
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%;
+}
+.form label{
+    margin: 1% 0;
+    font-weight: bold;
+    font-family: 'arial';
+}
+.form input{
+    margin: 2% 0 !important;
+    padding: 2% !important;
+    border-radius: 8px;
+    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: 'arial';
+}
+
+.form input:focus{
+    border: 1px solid #366AE0;
+}
+
+.form button{
+    border-radius: 10px;
+    width: 100%;
+    padding: 2%;
+    border: 1px solid black;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: #083BB2;
+    color: white;
+    font-size: 15px;
+    font-family: 'arial';
+}
+.form button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid #083BB2;
+}
+
+/* input[type='text']{
+    margin-top: 0%;
+  } */
+
+  .form input[type="text"]::placeholder {
+    position: relative; 
+    top: 1px; 
+  }
+
+  .toggleSignup{
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .toggleSignup span:nth-child(1){
+   color: #6f6a6a;
+  }
+
+  .toggleSignup span:nth-child(2){
+    color: #366AE0;
+    cursor: pointer;
+    margin-left: 1px;
+  }

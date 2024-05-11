@@ -1,0 +1,27 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(0, 0, 0, 0.6); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    backdrop-filter: blur(2.5px); /* Adjust the blur value as needed */
+    
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    /* max-width: 500px; */
+    /* max-height: 80vh; */
+    overflow: auto;
+    width: fit-content;
+    padding: 0px;
+    margin: 0px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}

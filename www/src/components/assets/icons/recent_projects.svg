@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18.235" height="16.521" viewBox="0 0 18.235 16.521">
+  <g id="Group_162555" data-name="Group 162555" transform="translate(-55.45 -212.45)">
+    <g id="folder" transform="translate(56 213)">
+      <path id="folder-2" data-name="folder" d="M19.135,16.708a1.713,1.713,0,0,1-1.713,1.713H3.713A1.713,1.713,0,0,1,2,16.708V4.713A1.713,1.713,0,0,1,3.713,3H8L9.711,5.57h7.711a1.713,1.713,0,0,1,1.713,1.713Z" transform="translate(-2 -3)" fill="none" stroke="#1f3bb3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.1"/>
+    </g>
+    <g id="history_2961948_1_" data-name="history_2961948(1)" transform="translate(59.513 217.305)">
+      <path id="Path_83185" data-name="Path 83185" d="M31.112,16.413l1.9,1.421a.316.316,0,1,0,.379-.505L31.632,16V13.316a.316.316,0,1,0-.632,0v2.843a.327.327,0,0,0,.112.254Z" transform="translate(-26.103 -11.263)" fill="#1f3bb3"/>
+      <path id="Path_83186" data-name="Path 83186" d="M5.368,2A4.738,4.738,0,0,0,.7,5.949L.576,5.77a.316.316,0,1,0-.524.354l.632.948a.316.316,0,0,0,.231.141H.945a.315.315,0,0,0,.223-.093l.79-.79a.316.316,0,1,0-.447-.447l-.2.2a4.106,4.106,0,1,1,4.053,4.765A3.887,3.887,0,0,1,2.15,9.24a.316.316,0,1,0-.515.366,4.512,4.512,0,0,0,3.732,1.87A4.738,4.738,0,1,0,5.368,2Z" transform="translate(0.003 -2)" fill="#1f3bb3"/>
+    </g>
+  </g>
+</svg>

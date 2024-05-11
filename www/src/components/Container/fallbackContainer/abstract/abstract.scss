@@ -1,0 +1,142 @@
+.details-skeleton-section{
+    .detail-skeleton-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+        .detail-left-section {
+            width: 331px;
+            .original-document-block{
+                height: 71px;
+                background: #F4F4F2;
+                width: calc(100% - 40px);
+                margin-bottom: 27px;
+                margin-top: 30px;
+            }
+        }
+
+        .skeleton-small-box{
+            display: block;
+        }
+    
+        .detail-right-section {
+            width: calc(100% - 331px);
+            margin-top: 30px;
+            // margin-left: 25px;
+            .abstract-skeleton-part{
+                width: 100%;
+                height: 179px;
+                background: #F4F4F2;
+                margin-bottom: 31px;
+                
+            }
+            .progess-value{
+                background-color: #e7e7e0;
+            }
+            .family-members-block{
+                display: flex;
+                .skeleton-progress-bar-md .progess-value{
+                    margin-bottom: 10px !important;
+                    background-color: #e7e7e0;
+                }
+                .each-field{
+                    width: 175px;
+                }
+                .each-value{
+                    width: calc(100% - 163px);
+                    margin-left: 12px;
+                }
+            }
+    
+            .extended-family-members-block{
+                margin-top: 34px;
+            }
+    
+            .extended-family-members-second-block {
+                margin-top: 28px;
+            }
+    
+            .cpc-classcodes-block {
+                margin-top: 46px;
+            }
+    
+        }
+        .filters-block{
+            margin-left: 0px !important;
+        }
+        .year-skeleton-section {
+            display: none;
+        }
+        .each-filter-list { 
+            margin-bottom: 52px !important;
+        }
+    }
+    // image slider css 
+    .details-image-sider-container{
+        width: 100%;
+        .image-slider-section{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 100px;
+
+            .each-image-block {
+                background: #F4F4F2;
+                width: 196px;
+                height: 184px;
+                margin-left: 15px;
+            }
+        }
+    }
+
+    // Description and Claims section css
+    .description-claims-container{
+        width: 100%; 
+        .each-description-claims-block{
+            // display: -ms-flexbox;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 52px;
+
+            .description-block{
+                width: 47%;
+                .progess-value{
+                    margin-bottom: 10px !important;
+                    background-color: #e7e7e0;
+                }
+                .custom-progress-value{
+                    margin-bottom: 18px !important;
+                }
+            } 
+    
+            .claims-block{
+                width: 47%;
+                .progess-value{
+                    margin-bottom: 10px !important;
+                    background-color: #e7e7e0;
+                }
+                .custom-progress-value{
+                    margin-bottom: 18px !important;
+                }
+            }
+        }
+    }
+    // Legal Events Block css
+    .legal-events-container {
+        margin-bottom: 76px;
+        .progess-value{
+            margin-bottom: 12px !important;
+            background-color: #e7e7e0;
+        }
+    }
+}
