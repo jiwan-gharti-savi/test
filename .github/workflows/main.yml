@@ -13,4 +13,4 @@ jobs:
     - name: Execute custom hook script
       run: |
         
-        .github/hooks/.github/hooks/run-tests-and-coverage.sh
+        .github/hooks/run-tests-and-coverage.sh
