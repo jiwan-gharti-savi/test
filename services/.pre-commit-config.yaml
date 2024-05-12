@@ -5,7 +5,9 @@ repos:
         stages: [commit]
         types: [python]
         name: pytest-check
-        entry: python -m pytest -v ./services/tests/auth.py
+        # entry: python -m pytest -v ./services/tests/auth.py
+        # entry: .github/hooks/run-tests-and-coverage.sh
+        entry: cd services && coverage run -m pytest -s && coverage report && coverage html
         language: system
         pass_filenames: false
         always_run: true
