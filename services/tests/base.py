@@ -69,7 +69,7 @@ class TestBaseApi(unittest.TestCase):
         config.env = "dev"
         config.sandbox = True
         config.sandbox_generate = True
-        self.cases = DottedDict(json.load(open("./tests/data.json","r")))
+        self.cases = DottedDict(json.load(open("./services/tests/data.json","r")))
         # self.cases = DottedDict(json.load(open("data.json","r")))
         self.client = app.test_client()
         self.data = {}

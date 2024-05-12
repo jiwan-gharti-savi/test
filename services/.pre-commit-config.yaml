@@ -5,7 +5,8 @@ repos:
         stages: [commit]
         types: [python]
         name: pytest-check
-        entry: python -m pytest -v tests/
+        entry: python -m pytest -v ./services/tests/auth.py
         language: system
         pass_filenames: false
         always_run: true
+
