@@ -25,7 +25,7 @@ class TestBaseApi(unittest.TestCase):
         cls.connection.autocommit = True
         cursor = cls.connection.cursor()
         # Get list of migration files: 'migrate' is the directory containing your db_<timestamp>.sql files
-        sql_files = [f for f in os.listdir('./../migrations/db/')]
+        sql_files = [f for f in os.listdir('./migrations/db/')]
         
         # Sort them based on the timestamp to execute in order
         sql_files.sort()
@@ -34,7 +34,7 @@ class TestBaseApi(unittest.TestCase):
         for file in sql_files:
             print("Migrated <- ", file)
             try:
-                with open(os.path.join('./../migrations/db/', file), 'r') as sql_file:
+                with open(os.path.join('./migrations/db/', file), 'r') as sql_file:
                     sql_query = sql_file.read()
                     cursor.execute(sql_query)
             except IsADirectoryError:

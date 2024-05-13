@@ -2,12 +2,12 @@ repos:
   - repo: local
     hooks:
     -   id: pytest-check
-        stages: [commit]
+        stages: [push]
         types: [python]
         name: pytest-check
-        # entry: python -m pytest -v ./services/tests/auth.py
-        # entry: .github/hooks/run-tests-and-coverage.sh
-        entry: cd services && coverage run -m pytest -s && coverage report && coverage html
+        entry: sh .github/hooks/run-tests-and-coverage.sh
+        # entry: sh ./services/report.sh
+        # entry: cd services && coverage run -m pytest -s && coverage report && coverage html
         language: system
         pass_filenames: false
         always_run: true

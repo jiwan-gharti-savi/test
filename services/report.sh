@@ -1,1 +1,1 @@
-coverage run -m pytest tests/auth.py -s && coverage report && coverage html
+coverage run -m pytest -s && coverage report && coverage html
